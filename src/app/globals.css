@@ -1,26 +1,179 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /*--background: #ffffff;*/
+  /*--foreground: #171717;*/
+  --color-dark: #121212;
+  --color-light: #fafafa;
 }
 
+/*@theme inline {*/
+/*  --color-background: var(--background);*/
+/*  --color-foreground: var(--foreground);*/
+/*}*/
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 0.3px;
+}
+
+body {
+  /*background: var(--background);*/
+  /*color: var(--foreground);*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*@config {*/
+/*  content: "./src!**!*.{js,ts,jsx,tsx}";*/
+/*  darkMode: "class";*/
+/*}*/
+
+/* === Theme Extensions === */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-family-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  --color-darkText: #e4e6eb;
+  --color-dark: #121212;
+  --color-light: #fafafa;
+
+  /* Keyframes */
+  --animate-wave: wave 2s linear infinite;
+  --animate-flying-card: flying 3s infinite normal;
+  --animate-badge-pulse: badge 1.5s ease-out infinite;
+  --animate-looping-tag: loop 100s linear infinite;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-dark);
+    --foreground: var(--color-light);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* === Keyframes === */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flying {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes badge {
+  100% {
+    transform: scaleY(1.7) scaleX(1.25);
+    opacity: 0;
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* === Utility Classes === */
+/* Animation utilities */
+.animate-waving-hand {
+  animation: var(--animate-wave);
+}
+.animate-flying-card {
+  animation: var(--animate-flying-card);
+}
+.animate-badge-pulse {
+  animation: var(--animate-badge-pulse);
+}
+.animate-looping-tag {
+  animation: var(--animate-looping-tag);
+}
+
+/* Scrollbar Hide (replaces tailwind-scrollbar-hide plugin) */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Optional: Dark mode background/text helpers */
+.dark .bg-dark {
+  @apply bg-[#121212];
+}
+.dark .text-darkText {
+  @apply text-[#E4E6EB];
+}
+.bg-light {
+  @apply bg-[#fafafa];
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.light {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+#nprogress .bar {
+  background: #aaaaaa !important;
+  height: 2px !important;
+  z-index: 9999999 !important;
+}
+
+#nprogress .bar {
+  position: fixed !important;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-[3px] bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[3px] border-2 border-neutral-300 bg-neutral-600 dark:bg-neutral-400;
 }
