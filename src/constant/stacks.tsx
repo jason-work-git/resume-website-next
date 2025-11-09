@@ -1,5 +1,7 @@
 import React from "react";
 import { BsFillBootstrapFill, BsRobot } from 'react-icons/bs';
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 import {
   SiAngular,
   SiApollographql,
@@ -78,4 +80,5 @@ export const STACKS: stacksProps = {
   Socket: <SiSocketdotio size={iconSize} />,
   Express: <SiExpress size={iconSize} />,
   Jquery: <SiJquery size={iconSize} />,
+  'Framer-Motion': <TbBrandFramerMotion size={iconSize} />,
 };

@@ -7,13 +7,17 @@ import {NextPage} from 'next';
 import {ProjectItemProps} from '@/types/projects';
 import BackButton from "@/components/common/BackButton";
 import ProjectDetail from "@/components/pages/projects/components/ProjectDetail";
+import PageHeading from "@/components/common/PageHeading";
+import {mockProjects} from "@/components/pages/projects/components/project-mock-data";
 
 interface ProjectsDetailPageProps {
-    project: ProjectItemProps;
+    params: Promise<{ slug: string }>;
 }
 
-const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = () => {
-        const project = {
+const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = async ({params}) => {
+    const { slug } = await params;
+    console.log("slug",slug)
+        const project:ProjectItemProps = mockProjects.find(val => val.slug === slug) ?? {
             "id": 8,
             "title": "aulianza.id",
             "slug": "aulianza-id",
@@ -29,13 +33,13 @@ const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = () => {
         }
         const PAGE_TITLE = project?.title;
         const PAGE_DESCRIPTION = project?.description;
-
-        const canonicalUrl = `https://aulianza.id/project/${project?.slug}`;
+        //
+        // const canonicalUrl = `https://aulianza.id/project/${project?.slug}`;
 
         return (
             <>
                 {/*<NextSeo*/}
-                {/*    title={`${project?.title} - Project Ryan Aulia`}*/}
+                {/*    title={`${project?.title} - Project Abolfazl Nazari`}*/}
                 {/*    description={project?.description}*/}
                 {/*    canonical={canonicalUrl}*/}
                 {/*    openGraph={{*/}
@@ -43,7 +47,7 @@ const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = () => {
                 {/*        article: {*/}
                 {/*            publishedTime: project?.updated_at.toString(),*/}
                 {/*            modifiedTime: project?.updated_at.toString(),*/}
-                {/*            authors: ['Ryan Aulia'],*/}
+                {/*            authors: ['Abolfazl Nazari'],*/}
                 {/*        },*/}
                 {/*        url: canonicalUrl,*/}
                 {/*        images: [*/}
@@ -51,13 +55,15 @@ const ProjectsDetailPage: NextPage<ProjectsDetailPageProps> = () => {
                 {/*                url: project?.image,*/}
                 {/*            },*/}
                 {/*        ],*/}
-                {/*        siteName: 'Blog Ryan Aulia',*/}
+                {/*        siteName: 'Blog Abolfazl Nazari',*/}
                 {/*    }}*/}
                 {/*/>*/}
                 {/*<Container data-aos='fade-up'>*/}
+
                 <BackButton url='/projects'/>
-                {/*<PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />*/}
+                <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
                 <ProjectDetail {...project} />
+
                 {/*</Container>*/}
             </>
         );

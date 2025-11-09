@@ -20,7 +20,7 @@ const PAGE_DESCRIPTION =
 const DashboardPage: NextPage<DashboardPageProps> = ({ fallback }) => {
   return (
     // <SWRConfig value={{ fallback }}>
-    //     <NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />
+    //     <NextSeo title={`${PAGE_TITLE} - Abolfazl Nazari`} />
     //     <Container data-aos='fade-up'>
     //         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
     <Dashboard />
