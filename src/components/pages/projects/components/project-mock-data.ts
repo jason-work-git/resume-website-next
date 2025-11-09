@@ -10,8 +10,7 @@ export const mockProjects: ProjectItemProps[] = [
             image: '/static/project/tatpnu.avif',
             link_demo: 'https://tatpnu.com/',
             link_github: null,
-            stacks:
-                '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js"]',
             is_show: true,
             updated_at: '2024-03-4T12:29:09.882Z',
             content:
@@ -97,8 +96,7 @@ export const mockProjects: ProjectItemProps[] = [
             image: '/static/project/su-admin.tatpnu.com.avif',
             link_demo: 'https://su-admin.tatpnu.com/',
             link_github: null,
-            stacks:
-                '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
+            stacks: '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
             is_show: true,
             updated_at: '2024-03-4T12:29:09.882Z',
             content:
@@ -854,6 +852,210 @@ An advanced **Next.js 15 AI-powered search platform** for exploring and analyzin
         },
 
         {
+            id: 11,
+            title: 'Hire',
+            slug: 'hire-hamrahan',
+            description: 'A beautifully designed job hiring platform where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.',
+            image: '/static/project/hire-hamrahan.avif',
+            link_demo: '/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A beautifully designed **Next.js 15 job hiring platform** where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.
+
+---
+
+### 🚀 Introduction  
+💼 **Hiring Portal** – a **stunningly crafted job recruitment platform** built with **Next.js 15**, **TailwindCSS**, and **ShadCN UI components**  
+• 🧠 Designed for both **job seekers** and **employers**, offering an elegant, fast, and responsive interface  
+• 📄 Job applicants can **submit resumes** directly in their desired category  
+• 🏢 Companies can **review, accept, or reject** applications based on skill and suitability  
+• ⚙️ Fully dynamic and modular architecture — optimized for scalability and performance  
+• 🌗 Includes dark mode, animations, and micro-interactions for a polished user experience  
+
+---
+
+## ✨ Features  
+
+👤 **Candidate Experience**  
+- 🧾 Submit resumes via dynamic category-based forms  
+- 📂 Upload files using **React Dropzone** with instant feedback  
+- 🔍 Browse open positions with filters and live search  
+- 💬 Receive live notifications about application status  
+
+🏢 **Employer Dashboard**  
+- 🧠 Manage all incoming applications in one place  
+- ✅ Accept or reject candidates based on job requirements  
+- 📊 Track analytics like views, applicants, and engagement  
+- ⚙️ Built-in communication and status tracking tools  
+
+🎨 **Stunning Modern UI**  
+- 🌈 Powered by **Radix UI + Tailwind + Framer Motion**  
+- 🪄 Smooth transitions and reveal animations with **AOS & Motion**  
+- 🧩 Modular design system (cards, drawers, modals, and dropdowns)  
+- 🖼️ Responsive grid layouts that adapt seamlessly across devices  
+
+📅 **Advanced Job Filtering & Date Tools**  
+- 📆 Integrated **React Multi Date Picker + React Date Object**  
+- 🔎 Refine results by posting date, category, or contract type  
+
+📦 **Category-Based Job System**  
+- 🧩 Each listing belongs to a structured category (IT, Design, Finance, etc.)  
+- 📊 Optimized search using **cmdk command palette**  
+- 🪶 Category animations and hover effects for intuitive browsing  
+
+🔔 **Notifications & Feedback**  
+- 💬 Realtime status alerts with **Sonner Toast System**  
+- ⚡ Smooth progress indicators for uploads and form submissions  
+- 🧠 Minimal clutter, focused experience for both sides  
+
+---
+
+## ⚡ Performance  
+
+💡 **Next.js 15 + React 19**  
+- 🚀 Powered by the latest **App Router + Turbopack** features  
+- ⚡ Lightning-fast routing and prefetching  
+- 🪶 Optimized asset loading for near-instant navigation  
+
+📊 **Best-in-Class UX Metrics**  
+- Performance: **99–100**  
+- Accessibility: **100**  
+- SEO: **100**  
+- Best Practices: **100**  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 19 (RC)**  
+- 🎨 **TailwindCSS + ShadCN + Radix UI Components**  
+- 🧩 **Framer Motion + AOS Animations**  
+- 📦 **React Dropzone + Multi Date Picker**  
+- 🔍 **cmdk Command Palette + Axios API Layer**  
+- 💬 **Sonner Toasts + Tailwind Animate**  
+---
+      `,
+            is_featured:
+                true,
+        },
+
+        {
+            id: 12,
+            title: 'Inre',
+            slug: 'inre',
+            description: 'A large-scale platform (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.',
+            image: '/static/project/inre.avif',
+            link_demo: '/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A large-scale **Next.js 15 + T3 Stack hiring platform** (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.
+
+---
+
+### 🚀 Introduction  
+🏢 **INRE (Industrial Recruitment Exam)** – the official **private-sector employment platform** designed for large-scale hiring in Iran’s industrial and tech ecosystem.  
+• 💻 Built with **Next.js 15**, **T3 stack**, and **TypeScript**  
+• 🤝 Connects **job seekers** to over **2700 private companies** with **31,000+ job opportunities**  
+• 🧠 Implements structured exam-based recruitment, automated evaluation, and application tracking  
+• 🎨 Delivers a **visually striking, modern UI** with **dynamic animations and live statistics**  
+• ⚙️ Fully modular architecture powered by **tRPC**, **React Query**, and **Zod** for validation  
+• 🌐 Publicly accessible at [https://inre.ir](https://inre.ir)  
+
+---
+
+## ✨ Features  
+
+🧾 **Exam-Based Hiring System**  
+- Job candidates register and participate in standardized employment exams  
+- Each applicant’s results are automatically analyzed and scored  
+- Companies can review and select top-performing candidates directly  
+
+🏢 **Company Dashboard**  
+- Manage company listings, job posts, and candidate invitations  
+- View applicants filtered by category, skillset, and exam performance  
+- Real-time notifications for application updates  
+
+👤 **Candidate Experience**  
+- Personalized onboarding and resume submission  
+- Status tracking for submitted applications  
+- Secure authentication with **NextAuth v5 (Beta)**  
+- Responsive dashboards for managing job submissions and history  
+
+📈 **Dynamic Home & Analytics Sections**  
+- Animated **status counters** showing live participation metrics  
+- **Company marquees** and rotating banners built with **Swiper.js**  
+- Embedded **Aparat video gallery** for candidate feedback  
+- **Blog and notebook sections** offering hiring tips and guidance  
+
+🎨 **Beautiful & Functional UI**  
+- Built with **TailwindCSS + DaisyUI + Radix UI + Geist**  
+- **Framer Motion** and **Tailwind Animate** for micro-interactions  
+- Highly accessible and adaptive across devices  
+- Modular components: hero, schedule table, help notebook, and more  
+
+🔍 **Performance-Driven Architecture**  
+- Optimized with **Next.js Turbopack** and **React 18 concurrent features**  
+- **tRPC** ensures type-safe, end-to-end API communication  
+- **SuperJSON** and **React Query** for client-side caching and hydration  
+
+---
+
+## ⚡ Performance  
+
+💡 **T3 Stack Architecture (Next.js + tRPC + Prisma-ready)**  
+- 🚀 Type-safe communication across front and back  
+- 🔁 Zero-API boilerplate via **tRPC**  
+- 🧠 Ultra-fast revalidation using **TanStack React Query**  
+- 🪶 Minimal bundle size with optimized dynamic imports  
+
+📊 **Real Stats from Deployment**  
+- Over **31,000 job listings** managed seamlessly  
+- Tens of thousands of concurrent applicants handled smoothly  
+- Lighthouse: **98–100** in Performance & Accessibility  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 18.3**  
+- 🧠 **T3 Stack (tRPC + Zod + React Query + NextAuth)**  
+- 💬 **Axios + Notistack** for notifications  
+- 🎨 **TailwindCSS + DaisyUI + Radix UI + Geist**  
+- 🪄 **Framer Motion + Swiper + CMDK** for animations and command tools  
+- ⚙️ **TypeScript + ESLint + Prettier + SuperJSON**  
+- 📈 **Deployed at [inre.ir](https://inre.ir)**  
+
+---
+
+⭐ Built for efficiency, trust, and scalability — helping companies discover talent faster.  
+📩 Interested in collaboration or integration? **DM me anytime — I actually reply!**
+
+            `,
+            is_featured:
+                true,
+        },
+  {
+            id: 13,
+            title: 'Persiansite',
+            slug: 'persiansite',
+            description: '',
+            image: '/static/project/persiansite.ir.avif',
+            link_demo: '/',
+            link_github: null,
+      stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: ``,
+            is_featured:
+                true,
+        },
+  {
             id: 10000,
             title: '',
             slug: '',
@@ -861,7 +1063,7 @@ An advanced **Next.js 15 AI-powered search platform** for exploring and analyzin
             image: '/static/project/hm-catalog.avif',
             link_demo: '/',
             link_github: null,
-            stacks: '[ "React.js", "TailwindCSS","JavaScript","CSS","Material UI"]',
+      stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
             content: ``,
