@@ -25,7 +25,7 @@ const PAGE_DESCRIPTION =
 
 
 const ProjectsPage: NextPage<ProjectsPageProps> = () => {
-  const projects = mockProjects;
+  const projects = [...mockProjects].reverse();
   const [visibleProjects, setVisibleProjects] = useState(6);
 
   const loadMore = () => setVisibleProjects((prev) => prev + 2);

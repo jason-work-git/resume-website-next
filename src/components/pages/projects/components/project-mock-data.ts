@@ -1546,7 +1546,6 @@ It’s not just a booking portal — it’s your **gateway to adventure**, offer
             is_featured:
                 true,
         },
-
         {
             id: 18,
             title: 'Persian Group',
@@ -1871,7 +1870,6 @@ It combines modern design, automation, and intelligent analytics into one integr
             is_featured:
                 true,
         },
-
         {
             id: 21,
             title: 'Carilow',
@@ -1980,7 +1978,135 @@ Khodrogate has become one of the most trusted import agencies in the UAE–Iran 
             is_featured:
                 true,
         },
+    {
+        id: 22,
+        title: 'CRM',
+        slug: 'crm-next',
+        description: 'An enterprise-grade **Next.js 15 CRM platform** that unifies sales, marketing, support, and automation into one intelligent workspace — built for data-driven business growth.',
+        image: '/static/project/erp-persian.avif',
+        link_demo: null,
+        link_github: null,
+        stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+        is_show: true,
+        updated_at: '2023-07-23T12:29:09.882Z',
+        content: `
+An enterprise-grade **Next.js 15 CRM platform** that unifies sales, marketing, support, and automation into one intelligent workspace — built for data-driven business growth.
 
+---
+
+## 🧠 Introduction  
+**PersianCRM Next** is a complete **Customer Relationship Management (CRM) platform** developed with **Next.js 15**, **React 19**, and **TailwindCSS 4**, designed to centralize every customer interaction, automate workflows, and empower teams with analytics, communication tools, and AI-ready insights.
+
+It brings together **sales automation**, **marketing campaigns**, **support ticketing**, **inventory control**, and **role-based user management** — all within a sleek, responsive, and modular interface.
+
+---
+
+## ⚙️ Core Modules  
+
+### 💼 Sales Management  
+- Full **Lead → Opportunity → Deal pipeline**  
+- Contact and account linking with complete activity history  
+- Customizable sales stages with Kanban and drag-and-drop interface  
+- Automatic quote, invoice, and payment generation  
+- Territory, tax, and discount rules built-in  
+
+### 📢 Marketing Automation  
+- Campaign creation and multi-channel automation (email, SMS, in-app)  
+- Segmentation, lead scoring, and conversion tracking  
+- Real-time campaign analytics and ROI dashboards  
+- Smart form builder for capturing and routing leads  
+
+### 💬 Support & Helpdesk  
+- Centralized ticket management with priorities and SLAs  
+- Knowledge base and FAQ integration  
+- Multi-channel support: web, email, and chat  
+- Escalation rules, canned responses, and assignment automation  
+
+### 👥 Contact & Account Management  
+- Unified customer profiles with 360° view  
+- Hierarchical organization accounts with sub-contacts  
+- Activity timelines with calls, meetings, tasks, and notes  
+- Role-based visibility and access control  
+
+### 🧾 Inventory & Product Management  
+- Product catalog with pricing, taxes, and stock levels  
+- Purchase orders, sales orders, and invoices  
+- Supplier and vendor tracking  
+- Warehouse and shipment tracking  
+
+### 🔄 Workflow Automation  
+- Visual drag-and-drop workflow designer  
+- Triggers for field updates, notifications, and approvals  
+- Scheduled jobs, escalation rules, and condition logic  
+- Multi-step process approvals with status automation  
+
+### 🧰 Reports & Dashboards  
+- Interactive charts (powered by ApexCharts & Recharts)  
+- Custom dashboards with drag-and-drop layout editor  
+- Data grouping, pivot tables, and export to PDF/Excel  
+- Real-time metrics for KPIs, performance, and pipeline health  
+
+### 🧑‍💼 Role & Permission Control  
+- Modular user access with profiles and roles  
+- Field-level and action-level permission settings  
+- Group and team hierarchy structure  
+- Audit trail and activity logging  
+
+### 📦 Module Customization  
+- Fully dynamic module builder for new entities  
+- Custom fields, blocks, and relationships  
+- Conditional logic and layout editor  
+- Import/export tools for records and module definitions  
+
+---
+
+## 🧩 Additional Capabilities  
+
+| Category | Features |
+|-----------|-----------|
+| 📱 **Mobile Integration** | Progressive Web App (PWA) ready, offline access, mobile dashboards |
+| 🔔 **Notifications** | Real-time system alerts, toasts, and email notifications |
+| 📡 **Integrations** | REST + WebSocket API, webhook triggers, and external system sync |
+| 📅 **Calendar & Tasks** | Shared team calendar with meeting sync and reminders |
+| 💾 **Documents** | File management with drag-and-drop uploads and preview |
+| 🧮 **Finance Tools** | Taxes, currencies, and automatic total calculations |
+| 🧠 **AI-Ready** | Smart lead scoring, recommendations, and data pattern insights |
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 19**  
+- 🎨 **TailwindCSS 4 + Radix UI Components**  
+- 🧩 **Zustand + SWR** for state and data fetching  
+- 🪶 **Recharts + ApexCharts** for analytics  
+- 🧱 **React Hook Form + Zod** for robust validation  
+- 🧠 **Jodit & Tiptap** rich-text editors for notes and descriptions  
+- 💬 **Socket.io** for real-time updates and notifications  
+- 📦 **React Grid Layout + DnD Kit** for customizable dashboards  
+- 🔔 **Serwist (PWA) + NextJS Toploader + Sonner** for smooth UX  
+
+---
+
+## 🧭 Why It Stands Out  
+
+- Complete modular CRM core built for **enterprises and agencies**  
+- 100% **customizable modules, fields, and workflows**  
+- Advanced **reporting and real-time dashboards**  
+- Integrated **sales, support, and marketing**  
+- Built for **speed, scalability, and API extensibility**  
+
+---
+
+## 🌐 Summary  
+
+**PersianCRM Next** transforms how organizations manage customers, sales, and support — combining power, flexibility, and automation into a single cohesive system.  
+It’s not just CRM — it’s an **operating system for modern businesses**, built on the latest web technologies for performance, scalability, and usability.
+
+        `,
+        is_featured:
+            true,
+    },
         /*
         example to create new ones
         {
