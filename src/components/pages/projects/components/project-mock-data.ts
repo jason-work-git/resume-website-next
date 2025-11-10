@@ -10,7 +10,7 @@ export const mockProjects: ProjectItemProps[] = [
             image: '/static/project/tatpnu.avif',
             link_demo: 'https://tatpnu.com/',
             link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js","Shadcn"]',
             is_show: true,
             updated_at: '2024-03-4T12:29:09.882Z',
             content:
@@ -190,14 +190,14 @@ export const mockProjects: ProjectItemProps[] = [
         },
         {
             id: 3,
-            title: 'Hamrahanefarda',
-            slug: 'hamrahanefarda',
+            title: 'Hamrahane',
+            slug: 'hamrahane',
             description:
                 'Another University website was built originally from scratch using several powerful stacks.',
             image: '/static/project/hamrahanefarda.avif',
-            link_demo: 'https://hamrahanefarda.com/',
+            link_demo: 'https://Hamrahan.com/',
             link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","Node.js","JavaScript"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","Node.js","JavaScript","Shadcn"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
             content:
@@ -296,12 +296,12 @@ export const mockProjects: ProjectItemProps[] = [
         },
         {
             id: 4,
-            title: 'Hamrahanefarda-AdminPanel',
-            slug: 'hamrahanefarda-AdminPanel',
+            title: 'Hamrahan-AdminPanel',
+            slug: 'Hamrahan-AdminPanel',
             description:
                 'University admin panel built originally from scratch using several powerful stacks.',
             image: '/static/project/su-admin.tatpnu.com.avif',
-            link_demo: 'https://su-admin.hamrahanefarda.com/',
+            link_demo: 'https://su-admin.Hamrahan.com/',
             link_github: null,
             stacks:
                 '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
@@ -314,7 +314,7 @@ export const mockProjects: ProjectItemProps[] = [
         {
             id: 5,
             title: 'Report Tatpnu',
-            slug: 'hamrahanefarda',
+            slug: 'Hamrahan',
             description:
                 'A modern React admin dashboard built with Vite and Material UI.',
             image: '/static/project/report.tatpnu.com.avif',
@@ -432,7 +432,7 @@ export const mockProjects: ProjectItemProps[] = [
             description:
                 'A modern React admin dashboard built with Vite and Material UI.',
             image: '/static/project/hm-catalog.avif',
-            link_demo: 'https://catalog.hamrahanefarda.com/',
+            link_demo: 'https://catalog.Hamrahan.com/',
             link_github: null,
             stacks: '[ "React.js", "TailwindCSS","JavaScript","CSS","Material UI"]',
             is_show: true,
@@ -441,8 +441,6 @@ export const mockProjects: ProjectItemProps[] = [
                 ``,
             is_featured: true,
         },
-
-
         {
             id: 7,
             title: 'Auth Manager',
@@ -545,8 +543,6 @@ A secure multi-project authentication management panel built with **Vite + React
 `,
             is_featured: true,
         },
-
-
         {
             id: 8,
             title: 'Aghayerond',
@@ -655,7 +651,7 @@ A modern **Next.js 14 e-commerce platform** for buying and selling **premium (ro
             slug: 'lms-AdminPanel',
             description: 'A professional **LMS Admin Panel** designed to manage courses, lessons, professors, and multimedia uploads with precision and scalability',
             image: '/static/project/minimal-dashboard.avif',
-            link_demo: 'https://catalog.hamrahanefarda.com/',
+            link_demo: 'https://catalog.Hamrahan.com/',
             link_github: null,
             stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
             is_show: true,
@@ -752,7 +748,6 @@ A professional **LMS Admin Panel** built with **Vite + React 18 + MUI 5**, desig
             is_featured:
                 true,
         },
-
         {
             id: 10,
             title: '23 Gane',
@@ -761,7 +756,7 @@ A professional **LMS Admin Panel** built with **Vite + React 18 + MUI 5**, desig
             image: '/static/project/23gane.com.avif',
             link_demo: 'https://www.23gane.com/',
             link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Framer-Motion"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Framer-Motion","PWA","Shadcn"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
             content: `
@@ -850,16 +845,113 @@ An advanced **Next.js 15 AI-powered search platform** for exploring and analyzin
             is_featured:
                 true,
         },
-
         {
             id: 11,
+            title: '23Gane Admin',
+            slug: '23Gane-Admin',
+            description: 'A **React + MUI admin dashboard** built with the Minimal Template — designed to manage and power the 23Gane providing full control over users, content, analytics, and system data.',
+            image: '/static/project/minimal-dashboard.avif',
+            link_demo: null,
+            link_github: null,
+            stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A **React + MUI admin dashboard** built with the Minimal Template — designed to manage and power the **23Gane AI-powered Building Regulation Platform**, providing full control over users, content, analytics, and system data.
+
+---
+
+### 🧠 Introduction  
+🧩 **23Gane Admin Panel** – the intelligent management system for the **23Gane AI platform**, enabling administrators to oversee users, building law content, AI search data, and engagement analytics.  
+• 💻 Built with **React + Material UI (MUI)** and **Minimal Template** for a clean, professional experience  
+• ⚙️ Provides complete content, user, and analytics control for the **Next.js 15 23Gane** front-end  
+• 🧾 All regulations, blogs, and search logs are dynamically managed from this dashboard  
+• 🔒 Secured with authentication, permission levels, and API integration  
+
+---
+
+## ✨ Core Features  
+
+📊 **Dashboard Overview**  
+- Displays system metrics: total users, active searches, favorite articles, and daily views  
+- Real-time analytics for performance monitoring  
+
+👤 **User Management**  
+- Create, edit, or suspend user accounts  
+- Assign roles and control access levels  
+- Track user activity, favorites, and feedback  
+
+📚 **Regulation & Content Management**  
+- Manage all 23 National Building Regulation books and related articles  
+- Edit chapters, sections, and topics directly from the admin interface  
+- Link AI metadata and update semantic tags dynamically  
+
+🧠 **AI Data Controls**  
+- Review and train AI models on new data sets  
+- Edit embeddings, synonyms, and retriever configurations  
+- Fine-tune semantic relationships between topics  
+
+📰 **Blog & News Module**  
+- Create and publish educational blog posts for architects and engineers  
+- Manage SEO titles, slugs, and Open Graph metadata  
+- Preview articles in a live-render panel before publishing  
+
+🔍 **Search Analytics**  
+- Monitor user queries and AI search performance  
+- Identify top searched keywords and topics  
+- Generate reports to improve future AI model updates  
+
+📥 **Feedback & Support System**  
+- Manage user-submitted feedback and tickets  
+- Integrate responses with internal CRM or communication APIs  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **React 18 + Vite (Minimal Template)**  
+- 🎨 **Material UI (MUI v5)** for professional UI  
+- 📦 **Axios + Zustand** for API and state management  
+- 🧩 **Framer Motion** for smooth UI transitions  
+- 🧾 **Zod** for form validation  
+- 🔔 **Sonner** for notifications and alerts  
+
+---
+
+## 🏗️ Integration with 23Gane  
+
+This admin panel directly manages and enhances the **Next.js 15-based 23Gane platform**, powering:  
+- Dynamic regulation data updates  
+- AI model configuration and training inputs  
+- Blog and media synchronization  
+- User account and access control  
+- Analytics and report generation  
+
+---
+
+## ⚡ Performance  
+
+- Optimized with **lazy-loaded data tables** and **API caching**  
+- Responsive design suitable for both desktop and tablets  
+- Minimal load times with efficient MUI rendering  
+
+---
+
+⭐ The **23Gane Admin Dashboard** transforms the static AI search engine into a **living, data-driven ecosystem** — enabling seamless management, intelligent insights, and effortless scalability.
+
+            `,
+            is_featured:
+                true,
+        },
+        {
+            id: 12,
             title: 'Hire',
             slug: 'hire-hamrahan',
             description: 'A beautifully designed job hiring platform where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.',
             image: '/static/project/hire-hamrahan.avif',
-            link_demo: '/',
+            link_demo: null,
             link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
             content: `
@@ -941,14 +1033,13 @@ A beautifully designed **Next.js 15 job hiring platform** where users can submit
             is_featured:
                 true,
         },
-
         {
-            id: 12,
+            id: 13,
             title: 'Inre',
             slug: 'inre',
             description: 'A large-scale platform (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.',
             image: '/static/project/inre.avif',
-            link_demo: '/',
+            link_demo: null,
             link_github: null,
             stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
             is_show: true,
@@ -1040,37 +1131,875 @@ A large-scale **Next.js 15 + T3 Stack hiring platform** (INRE.ir) that connects 
             is_featured:
                 true,
         },
-  {
-            id: 13,
+        {
+            id: 14,
             title: 'Persiansite',
             slug: 'persiansite',
-            description: '',
+            description: 'A full-service **Next.js 16 digital agency website** for **Persian Site**, a leading tech company offering web design, SEO, content creation, automation, and etc.',
             image: '/static/project/persiansite.ir.avif',
-            link_demo: '/',
+            link_demo: null,
             link_github: null,
-      stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
-            content: ``,
+            content: `
+A full-service **Next.js 16 digital agency website** for **Persian Site**, a leading tech company offering web design, SEO, content creation, automation, and marketing campaigns — empowering businesses to shine in the digital era.
+
+---
+
+### 🚀 Introduction  
+🌐 **Persian Site** – a **modern digital transformation agency** with over **20 years of experience**, helping businesses grow through technology and strategy.  
+• 💻 Built with **Next.js 16 + React 19 + TailwindCSS** for maximum performance and aesthetics  
+• 🧠 Offers professional services including **web development, SEO, content marketing, automation**, and **digital campaigns**  
+• 💬 Designed to engage clients through persuasive visuals, storytelling, and smooth animations  
+• ⚙️ A complete corporate-grade site with contact forms, service pages, blog system, and process flow  
+• 🏢 Headquarters: Tehran – Pasdaran Street  
+
+---
+
+## ✨ Features  
+
+🎨 **Professional Web Design & Development**  
+- Custom responsive websites built to elevate brand identity  
+- Fast, secure, and optimized for all devices  
+- Designed for conversion — turning visitors into customers  
+
+🔍 **SEO & Search Engine Optimization**  
+- Strategic SEO planning to boost organic visibility  
+- Continuous analysis and optimization  
+- Long-term growth through keyword authority and ranking improvements  
+
+📣 **Digital Marketing & Campaign Management**  
+- Creative and data-driven ad campaigns  
+- Targeted audience engagement across multiple channels  
+- Conversion tracking, optimization, and ROI monitoring  
+
+🧠 **Content Creation & Branding**  
+- Engaging written, visual, and video content  
+- Storytelling that strengthens brand voice and recognition  
+- Supports blog publishing, influencer collaborations, and social media strategy  
+
+⚙️ **Automation & Marketing Systems**  
+- Business process automation tools to improve efficiency  
+- Email marketing, CRM integration, and smart analytics  
+- Enhanced productivity through AI-assisted workflows  
+
+💼 **Corporate Identity & Strategy**  
+- Defines clear digital strategies from concept to execution  
+- Long-term partnerships for sustainable growth  
+- Tailored solutions based on client needs and industry trends  
+
+---
+
+## 🌟 Highlights & Achievements  
+
+🏆 **20+ Years of Excellence**  
+- Trusted by over **1800 clients** across multiple industries  
+
+🚀 **2,880+ Successful Projects**  
+- Proven track record in delivering measurable growth  
+
+👨‍💻 **150+ Expert Professionals**  
+- Cross-functional team specializing in development, marketing, and automation  
+
+📈 **+43% Average Monthly Sales Growth**  
+- Real results driven by continuous analysis and innovation  
+
+---
+
+## ⚙️ Process Overview  
+
+1️⃣ **Consultation & Discovery** – Understand client goals and challenges  
+2️⃣ **Needs Analysis** – Market research, competition review, and roadmap creation  
+3️⃣ **Implementation** – Develop, design, and launch digital solutions  
+4️⃣ **Delivery & Support** – Ongoing optimization, maintenance, and analytics  
+
+---
+
+## ⚡ Performance  
+
+💡 **Next.js 16 + Turbopack**  
+- Blazing-fast server rendering and incremental builds  
+- Optimized SEO and Lighthouse scores above 95  
+
+🎬 **Framer Motion + Swiper Animations**  
+- Modern transitions, parallax effects, and interactive hero sections  
+
+💬 **Smart UI & UX**  
+- Accessible and engaging components via **Lucide Icons**, **React Hook Form**, and **React Hot Toast**  
+- Smooth, real-time interactions powered by **Zustand** for state management  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 16 + React 19**  
+- 🎨 **TailwindCSS + Framer Motion + Lucide React**  
+- 🧠 **React Hook Form + Yup Validation**  
+- 🪄 **Zustand State Management**  
+- 📊 **Swiper + Motion Animations**  
+- ⚙️ **TypeScript + ESLint + Prettier + Turbopack**  
+
+            `,
             is_featured:
                 true,
         },
-  {
+        {
+            id: 15,
+            title: 'Concert',
+            slug: 'concert-next-dubai',
+            description: 'A **Next.js 15 concert and event website** designed for **“The Grand Night of Iranians”**, showcasing artists, ticket plans, event details, and travel packages ',
+            image: '/static/project/concert.avif',
+            link_demo: null,
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A **Next.js 15 concert and event website** designed for **“The Grand Night of Iranians”**, showcasing artists, ticket plans, event details, and travel packages — delivering an immersive, luxury concert experience.
+
+---
+
+### 🎤 Introduction  
+🌃 **The Grand Night of Iranians** – an unforgettable 7-hour live concert event featuring the biggest names in Persian rap and pop.  
+• 💻 Built with **Next.js 15**, **React 18**, and **TailwindCSS** for high performance and stunning visuals  
+• 🎟️ Showcases ticket plans (Bronze to Platinum), artist profiles, and event information  
+• 🌍 Supports **multi-currency booking (AED, USD, EUR, Toman)**  
+• 🌐 Fully multilingual with **next-intl** (English & Persian)  
+• 🏖️ Hosted at **Jumeirah Beach, Dubai** — April 1, 2025, from 7 PM to 3 AM  
+
+---
+
+## ✨ Event Highlights  
+
+🎶 **Non-Stop 7 Hours of Live Music**  
+- Featuring **Sohrab MJ**, **Behzad Leito**, **Sepehr Khalse**, **Koorosh**, **Poobon**, and **Arta**  
+- Energetic performances blending Persian rap, pop, and electronic vibes  
+
+🔥 **Extraordinary Experience**  
+- Fireworks & professional lighting effects  
+- Dance performances by top Iranian DJs  
+- Open-air setup with luxury amenities  
+- Hookah lounges, drinks, and gourmet dining  
+
+🎟️ **Luxury Ticket Plans**  
+- **Platinum:** VIP table, limousine transfer, red carpet, dinner & exclusive photos  
+- **Diamond:** Premium stay + full service + limousine  
+- **Gold:** Front-stage seating, dinner & VIP zone  
+- **Silver:** Party access + fireworks + beach dancing  
+- **Bronze:** Entry-level ticket for night party & open dance floor  
+
+---
+
+## 🧑‍🎤 Artists Lineup  
+
+🎧 **Sohrab MJ**  
+A pioneer of Persian rap — emotional, nostalgic, and high-energy performances.  
+Featured tracks: *Na Ni Ok, Polomp, Haabil*
+
+🎧 **Behzad Leito**  
+Legend of Persian hip-hop blending modern beats with classic vibes.  
+Featured tracks: *Mary Jane, Bi Marefat, Too In Shahr*
+
+🎧 **Sepehr Khalse**  
+Modern, creative, and electric — live renditions of *Tiffany, Yakuza, Ye Emshabo*  
+
+🎧 **Koorosh**  
+Known for smooth vocals and heartfelt lyrics.  
+Featured tracks: *Isam, Nashod Behet Begam, Too In Khoone*
+
+🎧 **Poobon**  
+A genre-bending performer with his own distinct style.  
+Featured tracks: *In Man Kist, 12-34, Bi Marefat*
+
+🎧 **Arta**  
+Captivating with emotion and warmth.  
+Featured tracks: *Dokhtare Tokhs, Erade Kon, Kash Boodi*
+
+---
+
+## 🖼️ Gallery  
+
+📸 Full-screen photo gallery of the venue and event highlights  
+- Stunning images from **Jumeirah Beach**  
+- Fireworks, crowd energy, artist performances, and stage effects  
+
+---
+
+## ⚙️ Tech Stack  
+
+- ⚛️ **Next.js 15 + React 18**  
+- 🎨 **TailwindCSS 3 + Geist UI**  
+- 🌀 **Swiper.js** for galleries and slides  
+- 🌍 **next-intl** for multilingual content  
+- 🎬 **GSAP** for motion and stage animations  
+- 🎧 **hls-video-element** for secure HLS video streaming  
+- ✅ **Zod** for data validation  
+
+---
+
+## ⚡ Performance & Design  
+
+💡 **Optimized for Modern Browsers**  
+- Turbo rendering via Next.js  
+- Fast image and video loading  
+
+🎬 **Immersive Visuals**  
+- Smooth animations powered by **GSAP**  
+- Fluid transitions between artist and ticket sections  
+
+📱 **Mobile-First & Responsive**  
+- Tailored experience across all devices  
+- Adaptive layouts for booking and viewing performances  
+
+---
+
+📍 **Event Location:**  
+**Jumeirah Beach, in front of W Dubai Hotel**  
+📅 **Date:** April 1, 2025  
+🕖 **Time:** 7 PM – 3 AM  
+📞 **Contact:** +97 150 702 1294  
+
+---
+
+⭐ The **Concert-Next** platform redefines event booking — blending artistry, technology, and luxury into one seamless concert experience.
+
+            `,
+            is_featured:
+                true,
+        },
+        {
+            id: 16,
+            title: 'Persian Horizan',
+            slug: 'Persian-Horizan-next',
+            description: 'A luxurious **Next.js 15 single-page application** for **Persian Horizon**, showcasing premium residency, business, and VIP travel services in Dubai — crafted for elegance, clarity, and exclusivity.',
+            image: '/static/project/persian-horizan-next.avif',
+            link_demo: null,
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A luxurious **Next.js 15 single-page application** for **Persian Horizon**, showcasing premium residency, business, and VIP travel services in Dubai — crafted for elegance, clarity, and exclusivity.
+
+---
+
+## 🏙️ Introduction  
+🌍 **Persian Horizon** is a digital gateway to luxury living, elite travel, and international business opportunities in the UAE.  
+This SPA (Single Page Application) combines a sleek modern design with high-performance Next.js architecture, guiding users through curated sections for residency, business setup, tourism, and marketing services.  
+
+• 🏡 Specialized in **residency and immigration consultation** for the UAE  
+• 💼 Offers **company formation**, **investment residency**, and **business trade** facilitation  
+• ✈️ Curates **VIP private tours** and **ultra-luxury experiences** for distinguished clients  
+• 🛍️ Provides **premium concierge and lifestyle services** for Iranians abroad  
+• 💬 Multilingual, mobile-optimized, and SEO-friendly for global accessibility  
+
+---
+
+## ✨ Core Sections  
+
+### 🏠 Home  
+- A cinematic hero section highlighting the brand’s luxury identity  
+- Smooth navigation across all service categories with a polished visual flow  
+
+### 🏢 Residence & Smart Migration  
+- Detailed programs for **residency through investment, real estate, and company formation**  
+- Integrated consultation forms for personalized immigration guidance  
+- Legal and financial advisory integration for complete transparency  
+
+### 💼 Business & Trade with UAE  
+- Tools for **product ordering, export, and import** between Iran and the UAE  
+- Smart logistics guidance and cost-optimized trade pathways  
+- Tailored B2B solutions for Iranian entrepreneurs  
+
+### ✨ Luxury Tours  
+- Showcases **exclusive VIP private tours** and **ultra-luxury experiences**  
+- Includes helicopter rides, private yachts, gourmet dining, and luxury events  
+- Personalized trip planning with high-end concierge service  
+
+### 💎 Exclusive Services for Iranians in UAE  
+- Assistance with **relocation, visa extensions, business operations**, and **property investment**  
+- Complete integration of **concierge, travel, and legal support**  
+
+---
+
+## 🧭 Features  
+
+- 🌐 **SPA Architecture:** Ultra-fast single-page transitions using Next.js 15  
+- 🧠 **Next-Intl Integration:** Multilingual routing and seamless translation  
+- 🎨 **TailwindCSS + Geist UI:** Elegant, minimal, and consistent branding  
+- 🧩 **Lucide Icons + Radix UI:** Modern UI components with accessibility in mind  
+- ⚡ **SEO Optimized & Responsive:** Designed for luxury audience visibility on all devices  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 18**  
+- 🎨 **TailwindCSS + Geist + Lucide React**  
+- 🧩 **Radix UI Components (Dropdown, Select)**  
+- 🧠 **Next-Intl for localization**  
+- ⚙️ **Zod for form validation and schema control**  
+- 🚀 **Prettier + ESLint + TypeScript 5** for clean, maintainable development  
+
+---
+
+## 💡 Vision  
+
+**Persian Horizon** blends technology, aesthetics, and service excellence — creating a seamless bridge between luxury, business, and global mobility.  
+It’s not just a website — it’s an experience that reflects prestige, trust, and international sophistication.
+
+            `,
+            is_featured:
+                true,
+        },
+        {
+            id: 17,
+            title: 'Touretbama',
+            slug: 'Touretbama-next',
+            description: 'A fully responsive **Next.js 15 travel and tour booking platform** that showcases curated travel packages, dynamic destinations, and seamless booking experiences — all wrapped in a modern, user-friendly interface.',
+            image: '/static/project/touretbama.avif',
+            link_demo: 'https://touretbama.com/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A fully responsive **Next.js 15 travel and tour booking platform** that showcases curated travel packages, dynamic destinations, and seamless booking experiences — all wrapped in a modern, user-friendly interface.
+
+---
+
+## 🧭 Introduction  
+🌍 **TourtBama** is a comprehensive tour management and booking website built with **Next.js 15** and **TailwindCSS**, designed for travelers seeking both domestic and international adventures.  
+The platform combines **elegant UI design**, **fast search**, and **real-time booking features** to make trip planning effortless and enjoyable.
+
+• 🧳 Explore tours across destinations such as **Dubai, Kish, Armenia, Japan, and more**  
+• 📅 Search and filter by **date range, location, and duration**  
+• 💰 Compare plans by **price and trip length**  
+• 🏨 Get full package details including **flights, hotels, insurance, and services**  
+• 🔔 Stay updated with **newsletters, blogs, and promotional offers**  
+
+---
+
+## ✨ Core Features  
+
+### 🔍 Smart Tour Search  
+- Filter tours by destination, date, and category  
+- Advanced mode for refining searches (price, duration, luxury level, etc.)  
+- Real-time availability and package data  
+
+### 🌴 Featured Tours  
+- Dynamic sections highlighting **seasonal and special offers** (e.g. Norooz packages)  
+- Multi-city packages with transparent pricing and duration details  
+- Each package includes gallery, description, and cost breakdown  
+
+### 📰 Blog & Travel Tips  
+- Educational posts about travel destinations and cultural insights  
+- News about visa updates, local festivals, and travel deals  
+
+### 👤 User Authentication  
+- Login/Sign-up functionality with session-based access  
+- Personalized dashboard for booking management and saved tours  
+
+### 🧭 About & Support  
+- Company info, contact forms, and **24/7 customer service** section  
+- FAQ and refund policy integrated directly within the interface  
+
+---
+
+## 🌐 Key Pages  
+
+- **Home:** Hero slider, featured destinations, and top offers  
+- **Destinations:** Grid view of available tour countries  
+- **Packages:** List of customizable travel plans  
+- **Blog:** Travel stories, insights, and updates  
+- **About & Contact:** Support, partnerships, and social links  
+
+---
+
+## 🧰 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 18** for performance and scalability  
+- 🎨 **TailwindCSS + DaisyUI + Geist UI** for elegant, modern design  
+- 🧩 **Radix UI Components** (Dialog, Dropdown, Tabs, Slider, etc.)  
+- 🔥 **Swiper.js** for responsive tour carousels  
+- ⚙️ **Zod + React Hook Form** for robust form validation  
+- 📦 **Axios + Notistack + Hot Toast** for smooth API and notification handling  
+
+---
+
+## ⚡ Performance & Design  
+
+- Built with **Turbopack** for ultra-fast dev experience  
+- Fully **responsive** across devices  
+- Optimized images, smooth transitions, and lazy-loaded tour grids  
+- **SEO and accessibility optimized** for global audience reach  
+
+---
+
+## 🧳 Vision  
+
+**TourtBama** aims to redefine how users discover and book tours — transforming traditional travel browsing into an engaging digital experience.  
+It’s not just a booking portal — it’s your **gateway to adventure**, offerin
+
+            `,
+            is_featured:
+                true,
+        },
+
+        {
+            id: 18,
+            title: 'Persian Group',
+            slug: 'Persiangroup-next',
+            description: 'A **Next.js 15 digital marketing agency website** built for **Persian Group**, showcasing professional web design, SEO, content creation, and smart automation services with a modern, motion-driven user experience.',
+            image: '/static/project/persiangroup.ir.avif',
+            link_demo: 'https://persiangroup.ir/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A **Next.js 15 digital marketing agency website** built for **Persian Group**, showcasing professional web design, SEO, content creation, and smart automation services with a modern, motion-driven user experience.
+
+---
+
+## 🚀 Introduction  
+💡 **Persian Group** is a top-tier digital marketing agency offering a full spectrum of online growth services — from **web design and branding** to **SEO optimization**, **content marketing**, and **automation systems**.  
+This site embodies the company’s core philosophy: *"The future is here — and we design it."*
+
+• 🌐 Built with **Next.js 15**, **React 19**, and **TailwindCSS 4**  
+• 🎯 Focused on lead generation, client acquisition, and conversion optimization  
+• 🧠 Structured around smart marketing, automation, and branding solutions  
+• ✨ Designed for agencies seeking a premium, minimalist, and high-performance web presence  
+
+---
+
+## ✨ Core Features  
+
+### 🎨 Professional Web Design Showcase  
+- Highlights fast, responsive, and SEO-friendly web development  
+- Promotes brand identity with engaging visuals and modern UI  
+- Mobile-first design with attention to accessibility and usability  
+
+### 📈 Digital Marketing & Campaigns  
+- Dedicated section for **strategic marketing campaigns**  
+- Emphasis on data-driven results and brand visibility growth  
+- Integrated storytelling for case studies and client success  
+
+### 🧠 Smart Automation Solutions  
+- Introduces **CRM-based and process automation systems**  
+- Streamlines marketing and customer engagement workflows  
+- Demonstrates how AI and data improve conversion rates  
+
+### 📝 Content Creation  
+- Comprehensive services: copywriting, creative imagery, and video marketing  
+- Emphasizes audience engagement and brand consistency  
+- Designed to convert visitors into long-term clients  
+
+### 🔍 SEO & Optimization  
+- Advanced on-page and technical SEO solutions  
+- Aims for top Google rankings and sustainable traffic growth  
+- Incorporates blog and educational resources for client awareness  
+
+---
+
+## 💼 Testimonials  
+Real stories from satisfied clients praising the agency’s creativity, professionalism, and impact:  
+> “An exceptional team with unmatched precision and creativity — they transformed our brand’s digital presence.”  
+> “Professional, responsive, and always on time. They delivered beyond expectations.”  
+
+---
+
+## 🧭 Collaboration Process  
+1️⃣ **Initial Consultation** – understanding client goals and challenges  
+2️⃣ **Market Analysis** – identifying opportunities and competitors  
+3️⃣ **Execution & Implementation** – deploying strategies and creative solutions  
+4️⃣ **Delivery & Ongoing Support** – continuous optimization and support  
+
+---
+
+## 🧩 Tech Stack  
+
+- ⚛️ **Next.js 15 + React 19**  
+- 🎨 **TailwindCSS 4** for responsive design  
+- 🌀 **Swiper.js** for interactive sliders  
+- 💫 **Motion** for smooth animations and transitions  
+- 🔔 **Next.js Top Loader** for improved UX during navigation  
+- ⚙️ **Axios** for API communication  
+
+---
+
+## ⚡ Performance & SEO  
+
+- Fully optimized static and dynamic routes  
+- Lighthouse scores: **Performance 98+ / Accessibility 100 / SEO 100**  
+- Clean semantic markup for excellent indexing  
+
+---
+
+## 🌟 Vision  
+**Persian Group** strives to redefine digital marketing in Iran and the Middle East — merging creativity, strategy, and technology to empower businesses with real, measurable growth.  
+The website reflects this vision through **clarity, sophistication, and digital excellence**.
+
+            `,
+            is_featured:
+                true,
+        },
+        {
+            id: 19,
+            title: 'Samfit Gym',
+            slug: 'samfitgym-next',
+            description: 'A modern **Next.js 15.4 fitness and gym platform** for **SamFit**, Iran’s largest premium fitness chain — featuring branch listings, membership plans, professional trainers, and online registration with full PWA support.',
+            image: '/static/project/samfitgym.com.avif',
+            link_demo: 'https://samfitgym.com/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","PWA","Shadcn"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A modern **Next.js 15.4 fitness and gym platform** for **SamFit**, Iran’s largest premium fitness chain — featuring branch listings, membership plans, professional trainers, and online registration with full PWA support.
+
+---
+
+## 💪 Introduction  
+🏋️‍♂️ **SamFit Gym** is the country’s largest fitness franchise, providing high-end health and bodybuilding services across **15+ active branches** nationwide.  
+This website centralizes everything — from **branch info, membership plans, and elite trainer profiles** to **fitness education, brand partnerships, and mobile app integration** — built with the latest **Next.js + React 19** stack.
+
+• 🌐 **15+ premium branches** across Tehran, Mashhad, and Mazandaran  
+• 🏆 Trusted by professional athletes, actors, and fitness influencers  
+• 📲 Integrated with **SamFit App** for online membership and class booking  
+• 💼 Developed by **Persian Group** for performance, scalability, and design excellence  
+
+---
+
+## ✨ Core Features  
+
+### 🏋️ Branch Management & Search  
+- View all branches with **locations, contact info, and Google Map links**  
+- Branch pages include working hours, facilities, and trainer info  
+- Dynamic "Coming Soon" placeholders for expanding branches  
+
+### 💳 Membership Plans & Pricing  
+- Multi-tier plans (VIP, 3-month, 6-month, annual)  
+- Transparent details: duration, sessions, and price in Toman  
+- Online registration and plan comparison  
+
+### 🧠 Professional Trainer Profiles  
+- Showcases certified and award-winning trainers  
+- Details include education, federation credentials, and achievements  
+- Includes specializations (TRX, EMS, IFBB Fitness, etc.)  
+
+### 🧍 Exercise Education & Tutorials  
+- Visual and textual guides for bodybuilding movements  
+- Instructions for proper form, muscle focus, and injury prevention  
+- Example: Barbell Shrug, Dumbbell Shrug, Face Pull, Upright Row  
+
+### 📰 Fitness Magazine  
+- Articles on training programs, diet, and recovery  
+- Expert insights like "5 Common Muscle Growth Mistakes" or "Home Workout Routines"  
+- Regular updates and “Read More” blog navigation  
+
+### ⚙️ Facilities & Equipment Highlights  
+- Lists premium imported fitness brands (Technogym, Precor, HOIST, LifeFitness)  
+- Details on each brand’s origin, features, and use in SamFit gyms  
+
+### 📲 SamFit App Integration  
+- Members can:  
+  - Buy and renew subscriptions  
+  - Reserve classes and track workouts  
+  - Monitor body stats and progress  
+  - Access professional coaching via mobile  
+- Promoted prominently with “Install App” CTA  
+
+---
+
+## 🧩 Tech Stack  
+
+- ⚛️ **Next.js 15.4 + React 19**  
+- 🎨 **TailwindCSS 4** for responsive UI  
+- 🔥 **Swiper.js** for dynamic carousels  
+- ⚡ **Serwist + Next-PWA** for full **Progressive Web App** support  
+- 🧠 **TanStack React Query** for API caching and real-time data fetching  
+- ⚙️ **Axios** for backend communication  
+
+---
+
+## 🧱 Structure Overview  
+
+- **Home Page:** Hero banner, quick metrics, top facilities  
+- **Branches Page:** Locations, maps, and direct call links  
+- **Plans Page:** Dynamic pricing and sign-up  
+- **Trainers Page:** Certified coaches and bios  
+- **Magazine Page:** Educational and motivational fitness content  
+- **Contact Page:** Direct call and message integration  
+
+---
+
+## ⚡ Performance  
+
+- 🚀 Optimized for SEO and Core Web Vitals  
+- 📲 PWA-enabled for offline access  
+- 💨 Lightning-fast navigation with Turbopack  
+- 🧩 Modular design for easy scalability as new branches launch  
+
+---
+
+## 🌟 Vision  
+
+**SamFit** isn’t just a gym — it’s a nationwide health ecosystem.  
+With a digital-first platform and an expanding branch network, it aims to deliver **personalized, science-backed fitness experiences** both online and offline — setting a new benchmark for fitness innovation in Iran.
+
+            `,
+            is_featured:
+                true,
+        },
+        {
+            id: 20,
+            title: 'Persian Crm',
+            slug: 'persian-crm-next',
+            description: 'A powerful **Next.js 16 SaaS platform** for **PersianCRM**, providing intelligent CRM and marketing automation for Iranian businesses with full analytics, integrations, and AI-driven sales management.',
+            image: '/static/project/persiancrm.ir.avif',
+            link_demo: 'https://persiancrm.ir/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A powerful **Next.js 16 SaaS platform** for **PersianCRM**, providing intelligent CRM and marketing automation for Iranian businesses with full analytics, integrations, and AI-driven sales management.
+
+---
+
+## 🚀 Introduction  
+**PersianCRM** is an advanced **customer relationship management platform** designed to help modern businesses in Iran increase sales, streamline operations, and automate customer engagement.  
+With **AI-powered marketing automation**, **integrated analytics**, and **mobile access**, PersianCRM enables companies to manage leads, optimize sales pipelines, and enhance customer satisfaction through smart automation.
+
+- 🧠 **Smart lead management and sales automation**  
+- 📊 **Advanced analytics and real-time dashboards**  
+- 🤖 **Marketing automation with multi-channel campaigns**  
+- 📱 **Mobile app for remote CRM access**  
+- 🔗 **Easy integrations via API and Webhook**  
+
+---
+
+## 💼 Core Features  
+
+### 🧩 Sales & Marketing Automation  
+- Automate email, SMS, and in-system marketing campaigns  
+- Smart workflows for lead scoring, routing, and follow-up  
+- Manage the full customer journey from lead to sale  
+
+### 📈 Advanced Reporting & Analytics  
+- Interactive reports and custom dashboards  
+- Track KPIs: conversion rate, sales growth, and team performance  
+- AI insights for revenue forecasting and trend detection  
+
+### 💬 Customer Service & Support  
+- Centralized ticketing and service automation  
+- Multi-channel customer communication  
+- SLA tracking and satisfaction reports  
+
+### 🧠 Smart Personalization  
+- Tailored CRM experiences per industry and business scale  
+- Fully customizable modules, fields, and pipelines  
+- Personalized dashboards for each role  
+
+### 🔗 Integrations & Ecosystem  
+Seamless connection with leading tools and platforms:  
+**WordPress, Slack, Asana, Jira, Shopify, Okta, ZoomInfo, Gong, Xero, Workday**, and more.  
+All through **API**, **Webhooks**, and **native integration modules**.
+
+### 🔒 Security & Data Management  
+- Enterprise-grade encryption and access control  
+- Automated backups and GDPR-aligned policies  
+- Role-based permissions and audit trails  
+
+---
+
+## 🧠 Tech Stack  
+
+- ⚛️ **Next.js 16 + React 19**  
+- 🎨 **TailwindCSS 4 + Radix UI Components**  
+- 🧩 **Zustand** for state management  
+- 📊 **Axios + React Query** for data fetching  
+- 🔍 **Lucide Icons + Swiper + Sonner Toasts**  
+- 🧠 **Turbopack** for blazing-fast build performance  
+
+---
+
+## 🏗️ Platform Modules  
+
+| Module | Description |
+|---------|-------------|
+| **CRM Core** | Centralized customer and lead management |
+| **Sales Automation** | Smart funnel tracking and activity scheduling |
+| **Marketing Hub** | Campaign builder, lead scoring, segmentation |
+| **Analytics & BI** | Reports, KPIs, and business insights |
+| **Customer Portal** | Dedicated portal for client communication |
+| **Integrations** | WordPress, Shopify, Slack, WhatsApp API, etc. |
+| **Mobile App** | iOS & Android companion app for CRM on the go |
+
+---
+
+## 📊 Business Impact  
+
+| Metric | With CRM | Without CRM |
+|--------|-----------|-------------|
+| Customer Satisfaction | 85% | 50% |
+| Error Reduction | 90% | 60% |
+| Sales Management Time Saved | 50% | — |
+
+Thousands of companies across **finance, healthcare, education, retail, and tourism** trust PersianCRM to grow smarter.
+
+---
+
+## 🎙️ Extra Features  
+
+- 🎧 **PersianCRM Podcast** – Leadership, data-driven marketing, and CRM best practices  
+- 📰 **PersianCRM Blog** – Insights on sales, automation, and business growth  
+- 📘 **Free Catalog Download** – Detailed overview of modules and integration options  
+- 📞 **Free Demo & 15-Day Trial** – Full access to explore before purchase  
+
+---
+
+## 🌍 Vision  
+
+PersianCRM’s mission is to **empower Iranian businesses** with world-class CRM technology that rivals global leaders.  
+It combines modern design, automation, and intelligent analytics into one integrated ecosystem — enabling every business to achieve **faster growth, deeper insights, and stronger customer loyalty**.
+
+
+            `,
+            is_featured:
+                true,
+        },
+
+        {
+            id: 21,
+            title: 'Carilow',
+            slug: 'carilow-next',
+            description: 'A modern **Next.js 15 automotive import and parts platform** connecting Iranian buyers with luxury cars and OEM parts from the UAE — offering transparent pricing, tracking, and full import management.',
+            image: '/static/project/carilow.com.avif',
+            link_demo: 'https://carilow.com/',
+            link_github: null,
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            is_show: true,
+            updated_at: '2023-07-23T12:29:09.882Z',
+            content: `
+A modern **Next.js 15 automotive import and parts platform** connecting Iranian buyers with luxury cars and OEM parts from the UAE — offering transparent pricing, tracking, and full import management.
+
+---
+
+## 🚘 Introduction  
+**Khodrogate** is a professional **car import and parts procurement platform** built to simplify every step of vehicle importation from the UAE to Iran.  
+It provides transparent pricing, expert consultation, and online tracking — from selection to customs clearance and delivery in Iran.  
+
+Whether you’re importing a **luxury vehicle**, a **temporary car**, or **authentic spare parts**, Khodrogate ensures a smooth, secure, and fully managed process.
+
+- 🌍 Import luxury and exotic cars from the UAE  
+- 🔧 Order genuine OEM auto parts directly from suppliers  
+- 📦 Real-time tracking and order transparency  
+- ⚙️ Customs clearance and insured delivery  
+- 🤝 20+ years of trusted expertise in automotive imports  
+
+---
+
+## 🧩 Core Services  
+
+### 🚗 Vehicle Import  
+- **Temporary imports** for short-term use in Iran (up to 6 months)  
+- **Free zone imports** for areas like Kish and Qeshm  
+- **Veterans and expat import programs** with exclusive benefits  
+- **Complete import management** — purchase, shipping, customs, and delivery  
+
+### 🧠 Consultation & Support  
+- Expert **one-on-one consultation** for selecting cars and navigating legal steps  
+- Transparent contracts and secure payment systems  
+- Dedicated support until vehicle delivery  
+
+### 🔧 Parts Procurement  
+- Sourcing original parts from verified UAE distributors  
+- Comprehensive **quality checks and authenticity validation**  
+- Online order tracking through personal dashboard  
+- Import options for engines, gearboxes, lighting, suspension, and electronics  
+
+| Example Parts | Brand | Status | Price |
+|----------------|--------|---------|-------|
+| 9G-Tronic Transmission | Mercedes-Benz | Delivered | 34,900 AED |
+| Rear Light X4 | BMW | Delivered | 26,300 AED |
+| Alternator | Toyota Camry | Delivered | 9,700 AED |
+
+---
+
+## 💡 Unique Advantages  
+
+| Feature | Description |
+|----------|-------------|
+| 💰 **Transparent Pricing** | Live price updates directly from UAE markets |
+| 🚚 **Full-Service Import** | Handling logistics, insurance, and customs |
+| 🔎 **Verified Authentic Parts** | Certified by global OEM standards |
+| 📱 **Online Dashboard** | Real-time tracking and digital documentation |
+| 🕐 **Fast Delivery** | Streamlined import workflow from Dubai to Iran |
+
+---
+
+## 🏗️ Tech Stack  
+
+- ⚛️ **Next.js 15 + React 19**  
+- 🎨 **TailwindCSS 4 + Radix UI Components**  
+- 🧩 **Zustand** for global state management  
+- 💨 **Turbopack** for build speed  
+- 🧭 **Swiper** for vehicle and parts galleries  
+- 🔔 **NextJS Toploader + Lucide Icons** for sleek UX  
+- ⚙️ **Vaul + CMDK** for modals and command palette UI  
+
+---
+
+## 🚘 Experience Simplified Imports  
+
+**Khodrogate** transforms the complex car import process into a transparent, trackable experience:  
+
+1. **Select your car** from verified UAE listings  
+2. **Receive full inspection & documentation reports**  
+3. **Sign your digital import contract securely**  
+4. **Track customs & shipping updates in real time**  
+5. **Receive your car in Iran with full insurance coverage**  
+
+---
+
+## 🌐 About Khodrogate  
+
+With over **20 years of automotive experience**, **50+ international partners**, and **1000+ successful imports**,  
+Khodrogate has become one of the most trusted import agencies in the UAE–Iran automotive corridor.  
+
+- 🏢 Headquarters: Dubai, Sheikh Zayed Rd, Fairmont Hotel, Office 511  
+- ☎️ Contact: +971 4 254 4524  
+- 🌐 Website: [khodrogate.com](#)  
+
+**Khodrogate — Drive luxury home, safely and transparently.**
+
+            `,
+            is_featured:
+                true,
+        },
+
+        /*
+        example to create new ones
+        {
             id: 10000,
             title: '',
             slug: '',
             description: '',
             image: '/static/project/hm-catalog.avif',
-            link_demo: '/',
+            link_demo: null,
             link_github: null,
-      stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
             is_show: true,
             updated_at: '2023-07-23T12:29:09.882Z',
             content: ``,
             is_featured:
                 true,
-        },
+        },*/
 
+    ];
 // {
 //     id: 11,
 //     title: 'Pomoro',
@@ -1402,5 +2331,3 @@ A large-scale **Next.js 15 + T3 Stack hiring platform** (INRE.ir) that connects 
 //     content: null,
 //     is_featured: false,
 // },
-    ]
-;
