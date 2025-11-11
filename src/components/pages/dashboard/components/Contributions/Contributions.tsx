@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import { BsGithub as GithubIcon } from 'react-icons/bs';
-// import useSWR from 'swr';
-
-// import { fetcher } from '@/services/fetcher';
 
 import Calendar from './Calendar';
 import Overview from './Overview';
@@ -14,12 +11,20 @@ type ContributionsProps = {
   type: string;
   endpoint: string;
 };
-
-const Contributions = ({ username, endpoint }: ContributionsProps) => {
-  // const { data } = useSWR(endpoint, fetcher);
-  const data: any = null;
-  const contributionCalendar =
-    data?.contributionsCollection?.contributionCalendar;
+async function getGitHubData() {
+  const res = await fetch('http://localhost:3000/api/github', {
+    next: { revalidate: 3600 },
+  });
+  if (!res.ok) throw new Error('Failed to fetch');
+  return res.json();
+}
+const Contributions = async ({ username, endpoint }: ContributionsProps) => {
+  const data = await getGitHubData();
+  console.log(data);
+  // NOW IT WORKS
+  // if (!data?.weeks?.length) {
+  //     return <div className="dark:text-neutral-400">No contribution data</div>;
+  // }
 
   return (
     <section className='flex flex-col gap-y-2'>
@@ -41,14 +46,10 @@ const Contributions = ({ username, endpoint }: ContributionsProps) => {
         </Link>
       </SectionSubHeading>
 
-      {!data && <div className='dark:text-neutral-400'>No Data</div>}
-
-      {data && (
-        <div className='space-y-3'>
-          <Overview data={contributionCalendar} />
-          <Calendar data={contributionCalendar} />
-        </div>
-      )}
+      <div className='space-y-3'>
+        <Overview data={data} />
+        <Calendar data={data} />
+      </div>
     </section>
   );
 };

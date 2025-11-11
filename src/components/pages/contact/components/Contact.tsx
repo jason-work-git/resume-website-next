@@ -1,8 +1,7 @@
-
 import BookACall from './BookACall';
 import ContactForm from './ContactForm';
 import SocialMediaList from './SocialMediaList';
-import BreakLine from "@/components/common/break-line";
+import BreakLine from '@/components/common/break-line';
 
 const Contact = () => {
   return (

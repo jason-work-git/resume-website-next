@@ -9,8 +9,8 @@ import { useState } from 'react';
 // import prisma from '@/common/libs/prisma';
 import { ProjectItemProps } from '@/types/projects';
 import Projects from '@/components/pages/projects';
-import PageHeading from "@/components/common/PageHeading";
-import {mockProjects} from "@/components/pages/projects/components/project-mock-data";
+import PageHeading from '@/components/common/PageHeading';
+import { mockProjects } from '@/constant/projects';
 
 interface ProjectsPageProps {
   projects: ProjectItemProps[];
@@ -18,11 +18,10 @@ interface ProjectsPageProps {
 
 const PAGE_TITLE = 'Projects';
 const PAGE_DESCRIPTION =
-    'Several projects that I have worked on, both private and open source.';
+  'Several projects that I have worked on, both private and open source.';
 
 // stack list
 // '["Next.js", "React.js", "TypeScript", "TailwindCSS", "Prisma", "Firebase"]',
-
 
 const ProjectsPage: NextPage<ProjectsPageProps> = () => {
   const projects = [...mockProjects].reverse();

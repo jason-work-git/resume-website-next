@@ -1,20 +1,245 @@
-import {ProjectItemProps} from "@/types/projects";
+import { ProjectItemProps } from '@/types/projects';
 
-export const mockProjects: ProjectItemProps[] = [
-        {
-            id: 1,
-            title: 'Tatpnu',
-            slug: 'tatpnu',
-            description:
-                'University website was built originally from scratch using several powerful stacks.',
-            image: '/static/project/tatpnu.avif',
-            link_demo: 'https://tatpnu.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js","Shadcn"]',
-            is_show: true,
-            updated_at: '2024-03-4T12:29:09.882Z',
-            content:
-                `### 🚀 Introduction  
+const project_contents: { slug: string; content: string }[] = [
+  {
+    slug: 'amnmoj-next',
+    content: `
+        
+        ### 🧠 Amn Moj — Knowledge-Based Software Development Company  
+
+**Summary:**  
+A Next.js-based corporate website for a knowledge-driven technology company specializing in custom software solutions, advanced systems, and digital transformation for enterprises and government organizations.  
+
+---
+
+## **Amn Moj (امن موج)**
+**Official Website:** [amnmoj.com](https://amnmoj.com)  
+**Founded:** 2015 (1394)  
+**Type:** Knowledge-Based Software Company  
+**Location:** Tehran, Iran  
+
+---
+
+### **About the Company**
+Amn Moj is a knowledge-based electronic commerce and software development company focused on **creativity, innovation, and cutting-edge technology**. It began its journey in 2015 and was officially recognized by the Iranian Vice Presidency for Science and Technology as a knowledge-based enterprise in its first year of operation.  
+
+The company designs and delivers **custom software systems** across various industries — serving both **private and government sectors**, including the **Ministry of Economy**, **Islamic Parliament**, **Ports and Maritime Organization**, **Astan Quds Razavi**, **Telecommunication Company of Iran**, and **Hamrah Aval**.
+
+---
+
+### **Key Metrics**
+- 🧩 **40+** Completed Projects  
+- 🚀 **5+** Ongoing Projects  
+- 👩‍💻 **50+** Team Members  
+- 💡 **5+** Proprietary Products  
+
+---
+
+### **Fields of Expertise**
+- 🌐 Development of **Web Applications** with modern technologies  
+- 📱 **Android** and **iOS** mobile app development  
+- 💻 **Windows** desktop software development  
+- 📺 Video **streaming and VOD** platforms  
+- 🤖 AI-powered **data analysis**, **image processing**, and **text processing** systems  
+
+---
+
+### **Notable Projects**
+- National **Election Monitoring System**  
+- **Ports and Maritime Organization** Management Platform  
+- **Razvan** Application (religious content app)  
+- **Parxis** Education System  
+- **VOD System** for Telecommunication Company of Iran  
+- **Bina Cultural Ecosystem**  
+- **Insurance SEO Optimization System** for Social Security Organization  
+- **Online Learning System** for Shahid Palizvani  
+- **Ayoo App**, **Ostad Motahari App**, **BarYar App**, and **Classroom App**  
+- **Artibition** — VR Live Streaming System  
+- **BitHome**, **Smart Action**, **Hap Shared Platform**, and others  
+
+---
+
+### **Products**
+#### **SSO (Single Sign-On Platform)**
+A unified authentication and access management system for organizations providing:  
+- Centralized and secure user registration & verification  
+- Unified service access for all stakeholders  
+- Integration with external systems via API  
+- Modular panels for administrators, auditors, and users  
+- Role-based access control and real-time reporting  
+
+---
+
+### **Team Structure**
+The company is composed of over **50 professionals**, including:  
+- Chief Executive, Board Members, and Technical Advisors  
+- Product Managers & Project Leads  
+- Frontend/Backend Developers  
+- UI/UX Designers  
+- Data Analysts & QA Specialists  
+- DevOps Engineers & Support Teams  
+
+---
+
+### **Major Clients**
+- **Ministry of Economic Affairs and Finance**  
+- **Islamic Parliament of Iran**  
+- **Ports and Maritime Organization**  
+- **Astan Quds Razavi**  
+- **Telecommunication Company of Iran (TCI)**  
+- **Hamrah Aval (MCI)**  
+- **Organization for Islamic Development**  
+
+---
+
+### **Technology Stack**
+Built with **Next.js**, utilizing modern front-end frameworks and technologies for performance and scalability.  
+Supports responsive design, multilingual UI (Persian/English), and modular content architecture.
+`
+  },
+  {
+    slug: 'zagrutti-next',
+    content: `
+A **luxury tailor-made suit e-commerce platform** built with **Next.js 12**, offering online customization, advanced product filters, appointment booking for in-person fitting, and full authentication and campaign systems.
+
+---
+
+## 🕴️ Introduction  
+**Zagrutti** is a premium **men’s suit and fashion website** that combines digital elegance with craftsmanship.  
+Customers can browse, customize, and purchase suits based on fabric, size, and style preferences — or book appointments for in-person measurements.  
+The platform delivers a high-end, seamless experience merging e-commerce with personalized tailoring.
+
+---
+
+## ✨ Key Features  
+
+### 👔 Advanced Product Customization  
+- Dynamic product variations by **size, color, and fabric type**  
+- Real-time filtering by style, category, and availability  
+- Detailed product pages with gallery, specifications, and material info  
+
+### 📅 Appointment & Measurement Scheduling  
+- Book personalized **in-store measurement sessions**  
+- Automated notifications and reminders for booked appointments  
+- Integration with internal CRM for tracking client sessions  
+
+### 🎯 Campaigns & Promotions  
+- Seasonal and limited-edition campaigns managed dynamically  
+- Integrated banners and promotional carousels  
+- Smart product tagging for active campaigns  
+
+### 🔐 Authentication & User Management  
+- Secure registration and login with cookie-based sessions  
+- Personalized dashboards for saved items and measurement records  
+- Token-based access for managing profile and appointments  
+
+### 🔔 Notifications & User Engagement  
+- Real-time notifications for campaign updates and appointment reminders  
+- Toast-based alerts for purchases, sign-ins, and campaign offers  
+- Persistent UX with SWR for live data revalidation  
+
+### 🛒 Modern Shopping Experience  
+- Responsive, mobile-first design with TailwindCSS  
+- Smooth navigation with skeleton loaders and NProgress animations  
+- Optimized image handling with lazy loading for performance  
+
+---
+
+## 🧩 Tech Stack  
+
+| Category | Technologies |
+|-----------|--------------|
+| Framework | **Next.js 12 + React 18** |
+| Styling | **TailwindCSS 3 + Line Clamp** |
+| State & Data | **SWR + Axios + JS-Cookie** |
+| Notifications | **React Toastify + React NProgress** |
+| UI Enhancements | **Swiper + React Loading Skeleton + LazySizes** |
+| Booking | **React Multi Date Picker** |
+
+---
+
+## 🚀 Summary  
+**Zagrutti** redefines luxury fashion e-commerce by merging **digital shopping** with **personalized tailoring services**.  
+It’s a complete platform where users can browse premium suits, engage in tailored promotions, book appointments, and enjoy a refined experience from online selection to real-world measurement.
+`
+  },
+  {
+    slug: 'jnan-next',
+    content: `
+
+---
+
+## 🛍️ Introduction  
+**Jenan** is a **multi-shop marketplace** platform designed for entrepreneurs and small businesses to easily launch their own stores, manage inventory, and start selling products online.  
+It delivers a clean, performant, and responsive experience powered by **Next.js** and **React**, offering buyers a unified browsing experience while giving sellers full control of their storefronts.
+
+---
+
+## ✨ Key Features  
+
+### 🏪 Multi-Vendor Store System  
+- Create individual online stores with unique branding  
+- Custom store URLs, banners, and product collections  
+- Separate vendor dashboards for managing products, sales, and orders  
+- Centralized marketplace homepage showcasing all vendors  
+
+### 🛒 Product & Inventory Management  
+- Add, edit, and categorize products with variants (size, color, etc.)  
+- Real-time stock tracking and visibility control  
+- Product image galleries with **lazy loading (Lazysizes)** for performance  
+- Integrated Swiper sliders for product carousels and promotions  
+
+### 💳 Orders & Payments  
+- Unified cart and checkout across multiple stores  
+- Vendor-specific order management and sales tracking  
+- Support for multiple payment methods (API-ready)  
+- Secure order persistence using **Redux Persist**  
+
+### 👥 User Accounts & Roles  
+- Buyer and seller authentication flows  
+- User dashboards for order history and profile management  
+- Vendor registration with approval workflow  
+- Role-based control and secure session management  
+
+### 🧰 Admin Tools  
+- Admin control over vendor approvals, listings, and transactions  
+- Centralized catalog moderation and content management  
+- Global settings for commission rates, shipping, and discount rules  
+
+### 📈 Marketing & Storefront Customization  
+- Built-in banners, sliders, and promotional sections  
+- SEO-friendly product pages and category listings  
+- Storybook-based component system for rapid UI design and consistency  
+
+### ⚡ Performance & UX  
+- Optimized SSR and static rendering with **Next.js 12**  
+- Responsive, mobile-first UI with **TailwindCSS**  
+- Lazy image loading and code splitting for faster navigation  
+- Redux Toolkit state management for seamless interactivity  
+
+---
+
+## 🧩 Tech Stack  
+
+| Category | Technologies |
+|-----------|--------------|
+| Framework | **Next.js 12 + React 18** |
+| Styling | **TailwindCSS 3 + line-clamp plugin** |
+| State Management | **Redux Toolkit + Redux Persist** |
+| UI Components | **Swiper, Storybook, React Toastify** |
+| Performance | **Lazysizes, Autoprefixer, Webpack 5** |
+| Language | **TypeScript 4.8** |
+
+---
+
+## 🚀 Summary  
+**Jenan** empowers users to **build, brand, and grow their own online stores** inside a shared marketplace ecosystem.  
+It merges **Next.js scalability** with **Redux-powered reliability**, creating a foundation for a full-featured multi-vendor e-commerce platform that’s fast, extensible, and business-ready.
+`
+  },
+  {
+    slug: 'tatpnu',
+    content: `### 🚀 Introduction  
 🎓 **Aghdasieh University** – a **real accredited university** that issues **official degrees** • 💻 Hybrid platform: **online + in-person** courses • 🧠 Complex **profiles, enrollment, grading, certificates** • ⚙️ Built 100% by me with **Next.js 14**, **TypeScript**, **Tailwind** • 🌐 Live since **June 2024** – still shipping weekly 
 
 
@@ -84,23 +309,11 @@ export const mockProjects: ProjectItemProps[] = [
 - 🗂️ **TanStack Query**  
 - 🪶 **MIT Licensed (Open Source)**  
 
-`,
-            is_featured: true,
-        },
-        {
-            id: 2,
-            title: 'Tatpnu-AdminPanel',
-            slug: 'Tatpnu-AdminPanel',
-            description:
-                'University admin panel built originally from scratch using several powerful stacks.',
-            image: '/static/project/su-admin.tatpnu.com.avif',
-            link_demo: 'https://su-admin.tatpnu.com/',
-            link_github: null,
-            stacks: '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
-            is_show: true,
-            updated_at: '2024-03-4T12:29:09.882Z',
-            content:
-                `### 🚀 Introduction  
+`
+  },
+  {
+    slug: 'Tatpnu-AdminPanel',
+    content: `### 🚀 Introduction  
 🧩 **Aghdasieh University Admin Panel** – the **core management system** behind the university platform  
 • 🏛️ Built from scratch using **React + Material UI (MUI 5)**  
 • 📊 Powerful tools for **managing students, teachers, courses, grades, and certificates**  
@@ -185,23 +398,11 @@ export const mockProjects: ProjectItemProps[] = [
 - 💬 **notistack + nprogress + error boundaries**  
 - ⚡ **Framer Motion + Lazy Loading**  
 
-`,
-            is_featured: true,
-        },
-        {
-            id: 3,
-            title: 'Hamrahane',
-            slug: 'hamrahane',
-            description:
-                'Another University website was built originally from scratch using several powerful stacks.',
-            image: '/static/project/hamrahanefarda.avif',
-            link_demo: 'https://Hamrahan.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","Node.js","JavaScript","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content:
-                `### 🚀 Introduction  
+`
+  },
+  {
+    slug: 'hamrahane',
+    content: `### 🚀 Introduction  
 🎓 **Hamrahan Platform** – a **next-generation educational system** designed for institutes, teachers, and learners  
 • 💻 Built entirely by me using **Next.js 14**, **TypeScript**, and **Tailwind CSS**  
 • 🧠 Advanced tools for **course management, lessons, grading, and collaboration**  
@@ -291,40 +492,15 @@ export const mockProjects: ProjectItemProps[] = [
 - 🔔 **React Hot Toast + Skeleton loaders**  
 - 🎥 **Node.js + ffmpeg (HLS Streaming)**  
 
-`,
-            is_featured: true,
-        },
-        {
-            id: 4,
-            title: 'Hamrahan-AdminPanel',
-            slug: 'Hamrahan-AdminPanel',
-            description:
-                'University admin panel built originally from scratch using several powerful stacks.',
-            image: '/static/project/su-admin.tatpnu.com.avif',
-            link_demo: 'https://su-admin.Hamrahan.com/',
-            link_github: null,
-            stacks:
-                '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
-            is_show: true,
-            updated_at: '2024-03-4T12:29:09.882Z',
-            content:
-                `This Proejct as same as the tatpnu admin panel, just a few small changes`,
-            is_featured: true,
-        },
-        {
-            id: 5,
-            title: 'Report Tatpnu',
-            slug: 'Hamrahan',
-            description:
-                'A modern React admin dashboard built with Vite and Material UI.',
-            image: '/static/project/report.tatpnu.com.avif',
-            link_demo: 'https://report.tatpnu.com/',
-            link_github: null,
-            stacks: '[ "React.js", "TailwindCSS","JavaScript","Vite"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content:
-                `### 🚀 Introduction  
+`
+  },
+  {
+    slug: 'Hamrahan-AdminPanel',
+    content: `This Proejct as same as the tatpnu admin panel, just a few small changes`
+  },
+  {
+    slug: 'Hamrahan',
+    content: `### 🚀 Introduction  
 🧩 **Minimal Kit Vite React App** – a **modern React-based admin and analytics platform** built for **speed, scalability, and performance**  
 • ⚙️ Developed using **Vite + React 18 + Material UI 5**  
 • 💻 Includes advanced dashboards, form systems, and global state management  
@@ -422,39 +598,15 @@ export const mockProjects: ProjectItemProps[] = [
 
 ⭐ If you found this project inspiring, give it a **star** — it helps a lot!  
 📩 Have questions or want to collaborate? **DM me anytime — I actually reply!**
-`,
-            is_featured: true,
-        },
-        {
-            id: 6,
-            title: 'Static Catalog',
-            slug: 'hm-catalog',
-            description:
-                'A modern React admin dashboard built with Vite and Material UI.',
-            image: '/static/project/hm-catalog.avif',
-            link_demo: 'https://catalog.Hamrahan.com/',
-            link_github: null,
-            stacks: '[ "React.js", "TailwindCSS","JavaScript","CSS","Material UI"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content:
-                ``,
-            is_featured: true,
-        },
-        {
-            id: 7,
-            title: 'Auth Manager',
-            slug: 'auth-manager',
-            description:
-                'A secure multi-project authentication management panel enabling centralized control .',
-            image: '/static/project/minimal-dashboard.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '[ "React.js","JavaScript","Material UI"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content:
-                `
+`
+  },
+  {
+    slug: 'hm-catalog',
+    content: ``
+  },
+  {
+    slug: 'auth-manager',
+    content: `
 A secure multi-project authentication management panel built with **Vite + React 18 + MUI 5**, enabling centralized control of user access, project keys, and privilege levels across all connected platforms.
 
 ---
@@ -540,22 +692,11 @@ A secure multi-project authentication management panel built with **Vite + React
 - ⚡ **Framer Motion + Sonner + NProgress**  
 - 🧭 **Stylis RTL Plugin + Simplebar React**  
 
-`,
-            is_featured: true,
-        },
-        {
-            id: 8,
-            title: 'Aghayerond',
-            slug: 'aghayerond',
-            description:
-                'A modern **Next.js 14 e-commerce platform** for buying and selling **premium (rond) SIM cards**',
-            image: '/static/project/aghayerond.com.avif',
-            link_demo: 'https://aghayerond.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+`
+  },
+  {
+    slug: 'aghayerond',
+    content: `
 A modern **Next.js 14 e-commerce platform** for buying and selling **premium (rond) SIM cards**, featuring multi-seller profiles, advanced search, and a rich multilingual experience.
 
 ---
@@ -642,21 +783,11 @@ A modern **Next.js 14 e-commerce platform** for buying and selling **premium (ro
 - 📱 **React Dropzone + React Hook Form + Yup**  
 - 🧾 **HTML2PDF.js + QRCode.React**  
 
-`,
-            is_featured: true,
-        },
-        {
-            id: 9,
-            title: 'LMS AdminPanel',
-            slug: 'lms-AdminPanel',
-            description: 'A professional **LMS Admin Panel** designed to manage courses, lessons, professors, and multimedia uploads with precision and scalability',
-            image: '/static/project/minimal-dashboard.avif',
-            link_demo: 'https://catalog.Hamrahan.com/',
-            link_github: null,
-            stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+`
+  },
+  {
+    slug: 'lms-AdminPanel',
+    content: `
 A professional **LMS Admin Panel** built with **Vite + React 18 + MUI 5**, designed to manage courses, lessons, professors, and multimedia uploads with precision and scalability.
 
 ---
@@ -744,22 +875,11 @@ A professional **LMS Admin Panel** built with **Vite + React 18 + MUI 5**, desig
 - 💬 **Sonner + NProgress + Framer Motion**  
 - 🧭 **React Router 6 + Simplebar React**  
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 10,
-            title: '23 Gane',
-            slug: '23-gane',
-            description: 'An advanced Site for exploring and analyzing Iran’s 23 National Building Regulation books with lightning-fast, intelligent semantic search.',
-            image: '/static/project/23gane.com.avif',
-            link_demo: 'https://www.23gane.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Framer-Motion","PWA","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: '23-gane',
+    content: `
             
 An advanced **Next.js 15 AI-powered search platform** for exploring and analyzing Iran’s 23 National Building Regulation books with lightning-fast, intelligent semantic search.
 
@@ -841,22 +961,11 @@ An advanced **Next.js 15 AI-powered search platform** for exploring and analyzin
 - ⚡ **Next-Themes + Tailwind Merge** for light/dark modes  
 - 🧾 **Profile, Favorites, and Project APIs** for user features  
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 11,
-            title: '23Gane Admin',
-            slug: '23Gane-Admin',
-            description: 'A **React + MUI admin dashboard** built with the Minimal Template — designed to manage and power the 23Gane providing full control over users, content, analytics, and system data.',
-            image: '/static/project/minimal-dashboard.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: '23Gane-Admin',
+    content: `
 A **React + MUI admin dashboard** built with the Minimal Template — designed to manage and power the **23Gane AI-powered Building Regulation Platform**, providing full control over users, content, analytics, and system data.
 
 ---
@@ -939,22 +1048,11 @@ This admin panel directly manages and enhances the **Next.js 15-based 23Gane pla
 
 ⭐ The **23Gane Admin Dashboard** transforms the static AI search engine into a **living, data-driven ecosystem** — enabling seamless management, intelligent insights, and effortless scalability.
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 12,
-            title: 'Hire',
-            slug: 'hire-hamrahan',
-            description: 'A beautifully designed job hiring platform where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.',
-            image: '/static/project/hire-hamrahan.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'hire-hamrahan',
+    content: `
 A beautifully designed **Next.js 15 job hiring platform** where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.
 
 ---
@@ -1029,22 +1127,11 @@ A beautifully designed **Next.js 15 job hiring platform** where users can submit
 - 🔍 **cmdk Command Palette + Axios API Layer**  
 - 💬 **Sonner Toasts + Tailwind Animate**  
 ---
-      `,
-            is_featured:
-                true,
-        },
-        {
-            id: 13,
-            title: 'Inre',
-            slug: 'inre',
-            description: 'A large-scale platform (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.',
-            image: '/static/project/inre.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+      `
+  },
+  {
+    slug: 'inre',
+    content: `
 A large-scale **Next.js 15 + T3 Stack hiring platform** (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.
 
 ---
@@ -1127,22 +1214,11 @@ A large-scale **Next.js 15 + T3 Stack hiring platform** (INRE.ir) that connects 
 ⭐ Built for efficiency, trust, and scalability — helping companies discover talent faster.  
 📩 Interested in collaboration or integration? **DM me anytime — I actually reply!**
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 14,
-            title: 'Persiansite',
-            slug: 'persiansite',
-            description: 'A full-service **Next.js 16 digital agency website** for **Persian Site**, a leading tech company offering web design, SEO, content creation, automation, and etc.',
-            image: '/static/project/persiansite.ir.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'persiansite',
+    content: `
 A full-service **Next.js 16 digital agency website** for **Persian Site**, a leading tech company offering web design, SEO, content creation, automation, and marketing campaigns — empowering businesses to shine in the digital era.
 
 ---
@@ -1240,22 +1316,11 @@ A full-service **Next.js 16 digital agency website** for **Persian Site**, a lea
 - 📊 **Swiper + Motion Animations**  
 - ⚙️ **TypeScript + ESLint + Prettier + Turbopack**  
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 15,
-            title: 'Concert',
-            slug: 'concert-next-dubai',
-            description: 'A **Next.js 15 concert and event website** designed for **“The Grand Night of Iranians”**, showcasing artists, ticket plans, event details, and travel packages ',
-            image: '/static/project/concert.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'concert-next-dubai',
+    content: `
 A **Next.js 15 concert and event website** designed for **“The Grand Night of Iranians”**, showcasing artists, ticket plans, event details, and travel packages — delivering an immersive, luxury concert experience.
 
 ---
@@ -1364,22 +1429,11 @@ Featured tracks: *Dokhtare Tokhs, Erade Kon, Kash Boodi*
 
 ⭐ The **Concert-Next** platform redefines event booking — blending artistry, technology, and luxury into one seamless concert experience.
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 16,
-            title: 'Persian Horizan',
-            slug: 'Persian-Horizan-next',
-            description: 'A luxurious **Next.js 15 single-page application** for **Persian Horizon**, showcasing premium residency, business, and VIP travel services in Dubai — crafted for elegance, clarity, and exclusivity.',
-            image: '/static/project/persian-horizan-next.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'Persian-Horizan-next',
+    content: `
 A luxurious **Next.js 15 single-page application** for **Persian Horizon**, showcasing premium residency, business, and VIP travel services in Dubai — crafted for elegance, clarity, and exclusivity.
 
 ---
@@ -1449,22 +1503,11 @@ This SPA (Single Page Application) combines a sleek modern design with high-perf
 **Persian Horizon** blends technology, aesthetics, and service excellence — creating a seamless bridge between luxury, business, and global mobility.  
 It’s not just a website — it’s an experience that reflects prestige, trust, and international sophistication.
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 17,
-            title: 'Touretbama',
-            slug: 'Touretbama-next',
-            description: 'A fully responsive **Next.js 15 travel and tour booking platform** that showcases curated travel packages, dynamic destinations, and seamless booking experiences — all wrapped in a modern, user-friendly interface.',
-            image: '/static/project/touretbama.avif',
-            link_demo: 'https://touretbama.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'Touretbama-next',
+    content: `
 A fully responsive **Next.js 15 travel and tour booking platform** that showcases curated travel packages, dynamic destinations, and seamless booking experiences — all wrapped in a modern, user-friendly interface.
 
 ---
@@ -1542,22 +1585,11 @@ The platform combines **elegant UI design**, **fast search**, and **real-time bo
 **TourtBama** aims to redefine how users discover and book tours — transforming traditional travel browsing into an engaging digital experience.  
 It’s not just a booking portal — it’s your **gateway to adventure**, offerin
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 18,
-            title: 'Persian Group',
-            slug: 'Persiangroup-next',
-            description: 'A **Next.js 15 digital marketing agency website** built for **Persian Group**, showcasing professional web design, SEO, content creation, and smart automation services with a modern, motion-driven user experience.',
-            image: '/static/project/persiangroup.ir.avif',
-            link_demo: 'https://persiangroup.ir/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'Persiangroup-next',
+    content: `
 A **Next.js 15 digital marketing agency website** built for **Persian Group**, showcasing professional web design, SEO, content creation, and smart automation services with a modern, motion-driven user experience.
 
 ---
@@ -1640,22 +1672,11 @@ Real stories from satisfied clients praising the agency’s creativity, professi
 **Persian Group** strives to redefine digital marketing in Iran and the Middle East — merging creativity, strategy, and technology to empower businesses with real, measurable growth.  
 The website reflects this vision through **clarity, sophistication, and digital excellence**.
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 19,
-            title: 'Samfit Gym',
-            slug: 'samfitgym-next',
-            description: 'A modern **Next.js 15.4 fitness and gym platform** for **SamFit**, Iran’s largest premium fitness chain — featuring branch listings, membership plans, professional trainers, and online registration with full PWA support.',
-            image: '/static/project/samfitgym.com.avif',
-            link_demo: 'https://samfitgym.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","PWA","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'samfitgym-next',
+    content: `
 A modern **Next.js 15.4 fitness and gym platform** for **SamFit**, Iran’s largest premium fitness chain — featuring branch listings, membership plans, professional trainers, and online registration with full PWA support.
 
 ---
@@ -1748,22 +1769,11 @@ This website centralizes everything — from **branch info, membership plans, an
 **SamFit** isn’t just a gym — it’s a nationwide health ecosystem.  
 With a digital-first platform and an expanding branch network, it aims to deliver **personalized, science-backed fitness experiences** both online and offline — setting a new benchmark for fitness innovation in Iran.
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 20,
-            title: 'Persian Crm',
-            slug: 'persian-crm-next',
-            description: 'A powerful **Next.js 16 SaaS platform** for **PersianCRM**, providing intelligent CRM and marketing automation for Iranian businesses with full analytics, integrations, and AI-driven sales management.',
-            image: '/static/project/persiancrm.ir.avif',
-            link_demo: 'https://persiancrm.ir/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'persian-crm-next',
+    content: `
 A powerful **Next.js 16 SaaS platform** for **PersianCRM**, providing intelligent CRM and marketing automation for Iranian businesses with full analytics, integrations, and AI-driven sales management.
 
 ---
@@ -1866,22 +1876,11 @@ PersianCRM’s mission is to **empower Iranian businesses** with world-class CRM
 It combines modern design, automation, and intelligent analytics into one integrated ecosystem — enabling every business to achieve **faster growth, deeper insights, and stronger customer loyalty**.
 
 
-            `,
-            is_featured:
-                true,
-        },
-        {
-            id: 21,
-            title: 'Carilow',
-            slug: 'carilow-next',
-            description: 'A modern **Next.js 15 automotive import and parts platform** connecting Iranian buyers with luxury cars and OEM parts from the UAE — offering transparent pricing, tracking, and full import management.',
-            image: '/static/project/carilow.com.avif',
-            link_demo: 'https://carilow.com/',
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: `
+            `
+  },
+  {
+    slug: 'carilow-next',
+    content: `
 A modern **Next.js 15 automotive import and parts platform** connecting Iranian buyers with luxury cars and OEM parts from the UAE — offering transparent pricing, tracking, and full import management.
 
 ---
@@ -1974,22 +1973,11 @@ Khodrogate has become one of the most trusted import agencies in the UAE–Iran 
 
 **Khodrogate — Drive luxury home, safely and transparently.**
 
-            `,
-            is_featured:
-                true,
-        },
-    {
-        id: 22,
-        title: 'CRM',
-        slug: 'crm-next',
-        description: 'An enterprise-grade **Next.js 15 CRM platform** that unifies sales, marketing, support, and automation into one intelligent workspace — built for data-driven business growth.',
-        image: '/static/project/erp-persian.avif',
-        link_demo: null,
-        link_github: null,
-        stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-        is_show: true,
-        updated_at: '2023-07-23T12:29:09.882Z',
-        content: `
+            `
+  },
+  {
+    slug: 'crm-next',
+    content: `
 An enterprise-grade **Next.js 15 CRM platform** that unifies sales, marketing, support, and automation into one intelligent workspace — built for data-driven business growth.
 
 ---
@@ -2103,29 +2091,423 @@ It brings together **sales automation**, **marketing campaigns**, **support tick
 **PersianCRM Next** transforms how organizations manage customers, sales, and support — combining power, flexibility, and automation into a single cohesive system.  
 It’s not just CRM — it’s an **operating system for modern businesses**, built on the latest web technologies for performance, scalability, and usability.
 
-        `,
-        is_featured:
-            true,
-    },
-        /*
-        example to create new ones
-        {
-            id: 10000,
-            title: '',
-            slug: '',
-            description: '',
-            image: '/static/project/hm-catalog.avif',
-            link_demo: null,
-            link_github: null,
-            stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
-            is_show: true,
-            updated_at: '2023-07-23T12:29:09.882Z',
-            content: ``,
-            is_featured:
-                true,
-        },*/
+        `
+  }
+];
 
-    ];
+const findContent = (slug: string) => {
+  return project_contents.find((val) => val.slug === slug)?.content;
+};
+
+export const mockProjects: ProjectItemProps[] = [
+  {
+    id: -2,
+    title: 'Amnmoj',
+    slug: 'amnmoj-next',
+    description:
+      'A Next.js-based corporate website for a knowledge-driven technology company specializing in custom software solutions, advanced systems',
+    image: '/static/project/amnmoj.avif',
+    link_demo: 'https://amnmoj.com',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('amnmoj-next'),
+    is_featured: false
+  },
+  {
+    id: -1,
+    title: 'Zagrutti',
+    slug: 'zagrutti-next',
+    description:
+      'A **luxury tailor-made suit e-commerce platform** built with **Next.js 12**, offering online customization, ...',
+    image: '/static/project/zagrutti.avif',
+    link_demo: null,
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('zagrutti-next'),
+    is_featured: false
+  },
+  {
+    id: 0,
+    title: 'Jnan',
+    slug: 'jnan-next',
+    description:
+      'A scalable **multi-vendor e-commerce platform** where anyone can create their own online shop',
+    image: '/static/project/jnan.avif',
+    link_demo: null,
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('jnan-next'),
+    is_featured: true
+  },
+  {
+    id: 1,
+    title: 'Tatpnu',
+    slug: 'tatpnu',
+    description:
+      'University website was built originally from scratch using several powerful stacks.',
+    image: '/static/project/tatpnu.avif',
+    link_demo: 'https://tatpnu.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Node.js","Shadcn"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('tatpnu'),
+    is_featured: false
+  },
+  {
+    id: 2,
+    title: 'Tatpnu-AdminPanel',
+    slug: 'Tatpnu-AdminPanel',
+    description:
+      'University admin panel built originally from scratch using several powerful stacks.',
+    image: '/static/project/su-admin.tatpnu.com.avif',
+    link_demo: 'https://su-admin.tatpnu.com/',
+    link_github: null,
+    stacks:
+      '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('Tatpnu-AdminPanel'),
+    is_featured: false
+  },
+  {
+    id: 3,
+    title: 'Hamrahane',
+    slug: 'hamrahane',
+    description:
+      'Another University website was built originally from scratch using several powerful stacks.',
+    image: '/static/project/hamrahanefarda.avif',
+    link_demo: 'https://Hamrahan.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","Node.js","JavaScript","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('hamrahane'),
+    is_featured: true
+  },
+  {
+    id: 4,
+    title: 'Hamrahan-AdminPanel',
+    slug: 'Hamrahan-AdminPanel',
+    description:
+      'University admin panel built originally from scratch using several powerful stacks.',
+    image: '/static/project/su-admin.tatpnu.com.avif',
+    link_demo: 'https://su-admin.Hamrahan.com/',
+    link_github: null,
+    stacks:
+      '["Material UI", "React.js", "TailwindCSS","JavaScript","Styled Components","CSS"]',
+    is_show: true,
+    updated_at: '2024-03-4T12:29:09.882Z',
+    content: findContent('Hamrahan-AdminPanel'),
+    is_featured: false
+  },
+  {
+    id: 5,
+    title: 'Report Tatpnu',
+    slug: 'Hamrahan',
+    description:
+      'A modern React admin dashboard built with Vite and Material UI.',
+    image: '/static/project/report.tatpnu.com.avif',
+    link_demo: 'https://report.tatpnu.com/',
+    link_github: null,
+    stacks: '[ "React.js", "TailwindCSS","JavaScript","Vite"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('Hamrahan'),
+    is_featured: false
+  },
+  {
+    id: 6,
+    title: 'Static Catalog',
+    slug: 'hm-catalog',
+    description:
+      'A modern React admin dashboard built with Vite and Material UI.',
+    image: '/static/project/hm-catalog.avif',
+    link_demo: 'https://catalog.Hamrahan.com/',
+    link_github: null,
+    stacks: '[ "React.js", "TailwindCSS","JavaScript","CSS","Material UI"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('hm-catalog'),
+    is_featured: false
+  },
+  {
+    id: 7,
+    title: 'Auth Manager',
+    slug: 'auth-manager',
+    description:
+      'A secure multi-project authentication management panel enabling centralized control .',
+    image: '/static/project/minimal-dashboard.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '[ "React.js","JavaScript","Material UI"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('auth-manager'),
+    is_featured: false
+  },
+  {
+    id: 8,
+    title: 'Aghayerond',
+    slug: 'aghayerond',
+    description:
+      'A modern **Next.js 14 e-commerce platform** for buying and selling **premium (rond) SIM cards**',
+    image: '/static/project/aghayerond.com.avif',
+    link_demo: 'https://aghayerond.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('aghayerond'),
+    is_featured: true
+  },
+  {
+    id: 9,
+    title: 'LMS AdminPanel',
+    slug: 'lms-AdminPanel',
+    description:
+      'A professional **LMS Admin Panel** designed to manage courses, lessons, professors, and multimedia uploads with precision and scalability',
+    image: '/static/project/minimal-dashboard.avif',
+    link_demo: 'https://catalog.Hamrahan.com/',
+    link_github: null,
+    stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('lms-AdminPanel'),
+    is_featured: false
+  },
+  {
+    id: 10,
+    title: '23 Gane',
+    slug: '23-gane',
+    description:
+      'An advanced Site for exploring and analyzing Iran’s 23 National Building Regulation books with lightning-fast, intelligent semantic search.',
+    image: '/static/project/23gane.com.avif',
+    link_demo: 'https://www.23gane.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","JavaScript","CSS","Framer-Motion","PWA","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('23-gane'),
+    is_featured: true
+  },
+  {
+    id: 11,
+    title: '23Gane Admin',
+    slug: '23Gane-Admin',
+    description:
+      'A **React + MUI admin dashboard** built with the Minimal Template — designed to manage and power the 23Gane providing full control over users, content, analytics, and system data.',
+    image: '/static/project/minimal-dashboard.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '[ "React.js", "JavaScript","CSS","Material UI"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('23Gane-Admin'),
+    is_featured: false
+  },
+  {
+    id: 12,
+    title: 'Hire',
+    slug: 'hire-hamrahan',
+    description:
+      'A beautifully designed job hiring platform where users can submit resumes under specific job categories, and companies can review, accept, or reject applications through a modern, intuitive UI.',
+    image: '/static/project/hire-hamrahan.avif',
+    link_demo: null,
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('hire-hamrahan'),
+    is_featured: false
+  },
+  {
+    id: 13,
+    title: 'Inre',
+    slug: 'inre',
+    description:
+      'A large-scale platform (INRE.ir) that connects professionals with top industrial, commercial, and tech companies through structured exams, automated screening, and AI-driven insights.',
+    image: '/static/project/inre.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('inre'),
+    is_featured: false
+  },
+  {
+    id: 14,
+    title: 'Persiansite',
+    slug: 'persiansite',
+    description:
+      'A full-service **Next.js 16 digital agency website** for **Persian Site**, a leading tech company offering web design, SEO, content creation, automation, and etc.',
+    image: '/static/project/persiansite.ir.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('persiansite'),
+    is_featured: true
+  },
+  {
+    id: 15,
+    title: 'Concert',
+    slug: 'concert-next-dubai',
+    description:
+      'A **Next.js 15 concert and event website** designed for **“The Grand Night of Iranians”**, showcasing artists, ticket plans, event details, and travel packages ',
+    image: '/static/project/concert.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('concert-next-dubai'),
+    is_featured: false
+  },
+  {
+    id: 16,
+    title: 'Persian Horizan',
+    slug: 'Persian-Horizan-next',
+    description:
+      'A luxurious **Next.js 15 single-page application** for **Persian Horizon**, showcasing premium residency, business, and VIP travel services in Dubai — crafted for elegance, clarity, and exclusivity.',
+    image: '/static/project/persian-horizan-next.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('Persian-Horizan-next'),
+    is_featured: false
+  },
+  {
+    id: 17,
+    title: 'Touretbama',
+    slug: 'Touretbama-next',
+    description:
+      'A fully responsive **Next.js 15 travel and tour booking platform** that showcases curated travel packages, dynamic destinations, and seamless booking experiences — all wrapped in a modern, user-friendly interface.',
+    image: '/static/project/touretbama.avif',
+    link_demo: 'https://touretbama.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('Touretbama-next'),
+    is_featured: false
+  },
+  {
+    id: 18,
+    title: 'Persian Group',
+    slug: 'Persiangroup-next',
+    description:
+      'A **Next.js 15 digital marketing agency website** built for **Persian Group**, showcasing professional web design, SEO, content creation, and smart automation services with a modern, motion-driven user experience.',
+    image: '/static/project/persiangroup.ir.avif',
+    link_demo: 'https://persiangroup.ir/',
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('Persiangroup-next'),
+    is_featured: true
+  },
+  {
+    id: 19,
+    title: 'Samfit Gym',
+    slug: 'samfitgym-next',
+    description:
+      'A modern **Next.js 15.4 fitness and gym platform** for **SamFit**, Iran’s largest premium fitness chain — featuring branch listings, membership plans, professional trainers, and online registration with full PWA support.',
+    image: '/static/project/samfitgym.com.avif',
+    link_demo: 'https://samfitgym.com/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","PWA","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('samfitgym-next'),
+    is_featured: true
+  },
+  {
+    id: 20,
+    title: 'Persian Crm',
+    slug: 'persian-crm-next',
+    description:
+      'A powerful **Next.js 16 SaaS platform** for **PersianCRM**, providing intelligent CRM and marketing automation for Iranian businesses with full analytics, integrations, and AI-driven sales management.',
+    image: '/static/project/persiancrm.ir.avif',
+    link_demo: 'https://persiancrm.ir/',
+    link_github: null,
+    stacks:
+      '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS","Shadcn"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('persian-crm-next'),
+    is_featured: true
+  },
+  {
+    id: 21,
+    title: 'Carilow',
+    slug: 'carilow-next',
+    description:
+      'A modern **Next.js 15 automotive import and parts platform** connecting Iranian buyers with luxury cars and OEM parts from the UAE — offering transparent pricing, tracking, and full import management.',
+    image: '/static/project/carilow.com.avif',
+    link_demo: 'https://carilow.com/',
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('carilow-next'),
+    is_featured: true
+  },
+  {
+    id: 22,
+    title: 'CRM',
+    slug: 'crm-next',
+    description:
+      'An enterprise-grade **Next.js 15 CRM platform** that unifies sales, marketing, support, and automation into one intelligent workspace — built for data-driven business growth.',
+    image: '/static/project/erp-persian.avif',
+    link_demo: null,
+    link_github: null,
+    stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+    is_show: true,
+    updated_at: '2023-07-23T12:29:09.882Z',
+    content: findContent('crm-next'),
+    is_featured: true
+  }
+  /*
+  example to create new ones
+  {
+      id: 10000,
+      title: '',
+      slug: '',
+      description: '',
+      image: '/static/project/hm-catalog.avif',
+      link_demo: null,
+      link_github: null,
+      stacks: '["Next.js", "React.js", "TypeScript", "TailwindCSS","CSS"]',
+      is_show: true,
+      updated_at: '2023-07-23T12:29:09.882Z',
+      content: ``,
+      is_featured:
+          true,
+  },*/
+];
+
+// old data
 // {
 //     id: 11,
 //     title: 'Pomoro',

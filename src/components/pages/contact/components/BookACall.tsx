@@ -16,7 +16,7 @@ const BookACall = () => {
             <div className='flex items-center gap-2 text-base font-medium md:text-lg'>
               <span>1 on 1 Chit-chat Session</span>
             </div>
-            <p className='text-sm dark:text-neutral-300 md:text-base'>
+            <p className='text-sm md:text-base dark:text-neutral-300'>
               Let’s find some time to talk about anything
             </p>
           </div>

@@ -20,6 +20,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       <Image
         src='/images/abolfazl-img.avif'
         alt='Abolfazl Nazari'
+        loading='eager'
         width={expandMenu ? 80 : imageSize}
         height={expandMenu ? 80 : imageSize}
         rounded='rounded-full'

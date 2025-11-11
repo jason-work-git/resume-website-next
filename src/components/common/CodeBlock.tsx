@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import {
@@ -6,7 +6,7 @@ import {
   HiOutlineClipboardCopy as CopyIcon,
 } from 'react-icons/hi';
 // @ts-ignore
-import { type as CodeProps  } from 'react-markdown/lib';
+import { type as CodeProps } from 'react-markdown/lib';
 // @ts-ignore
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 // @ts-ignore
@@ -39,11 +39,11 @@ SyntaxHighlighter.registerLanguage(languages.tsx, tsx);
 SyntaxHighlighter.registerLanguage(languages.css, css);
 
 const CodeBlock = ({
-                     className = '',
-                     children,
-                     inline,
-                     ...props
-                   }: CodeProps) => {
+  className = '',
+  children,
+  inline,
+  ...props
+}: CodeProps) => {
   const [isCopied, setIsCopied] = useState<boolean>(false);
   // eslint-disable-next-line unused-imports/no-unused-vars
   const [value, copy] = useCopyToClipboard();
@@ -65,49 +65,49 @@ const CodeBlock = ({
   }, [isCopied]);
 
   return (
-      <>
-        {!inline ? (
-            <div className='relative'>
-              <button
-                  className='absolute right-3 top-3 rounded-lg border border-neutral-700 p-2 hover:bg-neutral-800'
-                  type='button'
-                  aria-label='Copy to Clipboard'
-                  onClick={() => handleCopy(children.toString())}
-                  data-umami-event='Click Copy Code'
-              >
-                {!isCopied ? (
-                    <CopyIcon size={18} className='text-neutral-400' />
-                ) : (
-                    <CheckIcon size={18} className='text-green-600' />
-                )}
-              </button>
+    <>
+      {!inline ? (
+        <div className='relative'>
+          <button
+            className='absolute top-3 right-3 rounded-lg border border-neutral-700 p-2 hover:bg-neutral-800'
+            type='button'
+            aria-label='Copy to Clipboard'
+            onClick={() => handleCopy(children.toString())}
+            data-umami-event='Click Copy Code'
+          >
+            {!isCopied ? (
+              <CopyIcon size={18} className='text-neutral-400' />
+            ) : (
+              <CheckIcon size={18} className='text-green-600' />
+            )}
+          </button>
 
-              <SyntaxHighlighter
-                  {...props}
-                  style={themeColor}
-                  customStyle={{
-                    padding: '20px',
-                    fontSize: '14px',
-                    borderRadius: '8px',
-                    paddingRight: '50px',
-                  }}
-                  PreTag='div'
-                  language={match ? match[1] : 'javascript'}
-                  wrapLongLines={true}
-              >
-                {String(children).replace(/\n$/, '')}
-              </SyntaxHighlighter>
-            </div>
-        ) : (
-            <code className='rounded-md bg-neutral-200 px-2 py-1 text-[14px] font-light text-sky-600 dark:bg-neutral-700 dark:text-sky-300'>
-              {children}
-            </code>
-        )}
-      </>
+          <SyntaxHighlighter
+            {...props}
+            style={themeColor}
+            customStyle={{
+              padding: '20px',
+              fontSize: '14px',
+              borderRadius: '8px',
+              paddingRight: '50px',
+            }}
+            PreTag='div'
+            language={match ? match[1] : 'javascript'}
+            wrapLongLines={true}
+          >
+            {String(children).replace(/\n$/, '')}
+          </SyntaxHighlighter>
+        </div>
+      ) : (
+        <code className='rounded-md bg-neutral-200 px-2 py-1 text-[14px] font-light text-sky-600 dark:bg-neutral-700 dark:text-sky-300'>
+          {children}
+        </code>
+      )}
+    </>
   );
 };
 
-const LoadingPlaceholder = () => <div className='mb-12 mt-12 h-36 w-full' />;
+const LoadingPlaceholder = () => <div className='mt-12 mb-12 h-36 w-full' />;
 
 export default dynamic(() => Promise.resolve(CodeBlock), {
   ssr: false,

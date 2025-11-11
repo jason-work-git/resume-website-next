@@ -100,6 +100,7 @@ const BlogCardNew = ({
                 <Image
                   src='/images/abolfazl-img.avif'
                   alt='Abolfazl Nazari'
+                  loading='eager'
                   width={25}
                   height={25}
                   rounded='rounded-full'

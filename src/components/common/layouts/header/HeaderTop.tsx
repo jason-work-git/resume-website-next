@@ -37,6 +37,7 @@ const HeaderTop = () => {
           <Image
             src='/images/abolfazl-img.avif'
             alt='Abolfazl Nazari'
+            loading='eager'
             width={40}
             height={40}
             rounded='rounded-full'

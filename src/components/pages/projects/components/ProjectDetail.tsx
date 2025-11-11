@@ -3,8 +3,8 @@ import { STACKS } from '@/constant/stacks';
 import { ProjectItemProps } from '@/types/projects';
 
 import ProjectLink from './ProjectLink';
-import Tooltip from "@/components/common/Tooltip";
-import Image from "@/components/common/Image";
+import Tooltip from '@/components/common/Tooltip';
+import Image from '@/components/common/Image';
 
 const ProjectDetail = ({
   title,

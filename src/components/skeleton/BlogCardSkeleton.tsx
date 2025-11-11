@@ -1,7 +1,7 @@
 import Skeleton from 'react-loading-skeleton';
 
-import Card from "@/components/common/Card";
-import SkeletonLoader from "@/components/common/SkeletonLoader";
+import Card from '@/components/common/Card';
+import SkeletonLoader from '@/components/common/SkeletonLoader';
 
 const BlogCardSkeleton = () => {
   return (

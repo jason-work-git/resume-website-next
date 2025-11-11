@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
-import PageHeading from "@/components/common/PageHeading";
-import Contact from "@/components/pages/contact";
+import PageHeading from '@/components/common/PageHeading';
+import Contact from '@/components/pages/contact';
 // import { NextSeo } from 'next-seo';
 
 // import Container from '@/common/components/elements/Container';
@@ -9,18 +9,18 @@ import Contact from "@/components/pages/contact";
 
 const PAGE_TITLE = 'Contact';
 const PAGE_DESCRIPTION =
-    "Feel free to get in touch and let's have a discussion about how we can work together.";
+  "Feel free to get in touch and let's have a discussion about how we can work together.";
 
 const ContactPage: NextPage = () => {
-    return (
-        <>
-            {/*<NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />*/}
-            {/*<Container data-aos='fade-up'>*/}
-                <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
-                <Contact />
-            {/*</Container>*/}
-        </>
-    );
+  return (
+    <>
+      {/*<NextSeo title={`${PAGE_TITLE} - Ryan Aulia`} />*/}
+      {/*<Container data-aos='fade-up'>*/}
+      <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
+      <Contact />
+      {/*</Container>*/}
+    </>
+  );
 };
 
 export default ContactPage;
